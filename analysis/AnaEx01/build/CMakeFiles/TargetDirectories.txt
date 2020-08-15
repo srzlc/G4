@@ -1,0 +1,7 @@
+/Users/sharong/path/to/geant4/geant4.10.06.p01/examples/extended/analysis/AnaEx01/build/CMakeFiles/install/local.dir
+/Users/sharong/path/to/geant4/geant4.10.06.p01/examples/extended/analysis/AnaEx01/build/CMakeFiles/install/strip.dir
+/Users/sharong/path/to/geant4/geant4.10.06.p01/examples/extended/analysis/AnaEx01/build/CMakeFiles/install.dir
+/Users/sharong/path/to/geant4/geant4.10.06.p01/examples/extended/analysis/AnaEx01/build/CMakeFiles/AnaEx01.dir
+/Users/sharong/path/to/geant4/geant4.10.06.p01/examples/extended/analysis/AnaEx01/build/CMakeFiles/list_install_components.dir
+/Users/sharong/path/to/geant4/geant4.10.06.p01/examples/extended/analysis/AnaEx01/build/CMakeFiles/rebuild_cache.dir
+/Users/sharong/path/to/geant4/geant4.10.06.p01/examples/extended/analysis/AnaEx01/build/CMakeFiles/edit_cache.dir
