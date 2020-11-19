@@ -1,0 +1,179 @@
+begin:constant
+# Common:
+  lambda0 = 1.0e-6
+  omega0  = 2.0*pi*c/lambda0
+  nc      = critical(omega0)
+  T0      = lambda0/c
+  cpl     = 50
+  npc     = 36
+# Target
+  n1      = 50.0*nc
+  x1      = 10.0*lambda0
+  x2      = 12.0*lambda0
+  x3      = 14.0*lambda0
+  y1      = 5.0*lambda0
+  y2      = -5.0*lambda0
+  R       = (x-x2)^2+y^2
+  R1      = (3*lambda0)^2
+  R2      = (5*lambda0)^2
+# Domain:
+  xmin    =   0.0*lambda0
+  xmax    = 100.0*lambda0
+  ymin    = -20.0*lambda0
+  ymax    =  20.0*lambda0
+# Laser:
+  a0      = 10
+  tau0    = 10.0*T0
+  w_0     = 3.0*lambda0
+  x_spot  = x1 
+  x_R     = pi * w_0^2 / lambda0
+  RC      = x_spot * ( 1 + (x_R/x_spot)^2 )
+  w_bnd   = w_0 * sqrt( 1 + (x_spot/x_R)^2 )
+  gouy    = atan( x_spot/x_R )
+end:constant
+
+begin:control
+  nx               = (xmax-xmin)/lambda0*cpl
+  ny               = (ymax-ymin)/lambda0*cpl
+  t_end            = 201*T0
+  x_min            = xmin
+  x_max            = xmax
+  y_min            = ymin
+  y_max            = ymax
+  stdout_frequency = 1000
+ # restart_snapshot =  0001.sdf
+end:control
+
+begin:boundaries
+  bc_x_min = simple_laser
+  bc_x_max = open
+  bc_y_min = open
+  bc_y_max = open
+end:boundaries
+
+# ---------------------------------------------------------------------------------
+#                                      Species
+# ----------------------------------------^----------------------------------------
+
+begin:species
+  npart_per_cell =  npc
+  name           =  Deuteron
+  charge         =  1.0
+  mass           =  2*1836.0
+  density        =  n1
+  density        =  if((R gt R1) and (R lt R2) and abs(y) lt (-((5/6)*x-12.5*lambda0))  , density(Deuteron) , 0)
+  density        =  if( abs(y) lt (-((5/6)*x-15*lambda0)) and abs(y) gt (-((5/6)*x-12.5*lambda0) and (x lt x3) ,n1,density(Deuteron)) 
+end:species
+
+begin:species
+  npart_per_cell =  npc
+  name           =  Electron
+  charge         = -1.0
+  mass           =  1.0
+  density        =  density(Deuteron)
+end:species
+
+# ---------------------------------------------------------------------------------
+#                                       Subset
+# ----------------------------------------^------------------------------------
+
+begin:subset
+  name            = Deu
+  random_fraction = 1
+  include_species:Deuteron
+end:subset
+
+begin:subset
+  name            = Ele
+  random_fraction = 1
+  include_species:Electron
+end:subset
+
+begin:subset
+  name            = select
+  random_fraction = 1
+  gamma_min       = 1.0 
+  include_species:Deuteron
+end:subset
+
+# ---------------------------------------------------------------------------------
+#                                       Laser
+# ----------------------------------------^----------------------------------------
+
+begin:laser
+  boundary        = x_min
+  intensity_w_cm2 = a0^2*1.37e18
+  lambda          = lambda0
+  pol_angle       = 0.0
+  phase           = 2.0 * pi / lambda0 * y^2 / (2.0 * RC) - gouy
+  profile         = gauss(y,0,w_bnd)
+  t_profile       = (sin(pi*time/2.0/tau0))^2
+  t_start         = 0.0
+  t_end           = 2.0*tau0
+end:laser
+
+# ---------------------------------------------------------------------------------
+#                                       Output
+# ----------------------------------------^----------------------------------------
+
+begin:dist_fn
+  name                   = Ek
+  ndims                  = 1
+  dumpmask               = always
+  direction1             = dir_en
+  resolution1            = 1000
+  include_species:Deuteron
+  include_species:Electron
+end:dist_fn
+
+begin:output
+  name                   = o1
+  file_prefix            = A
+  dt_snapshot            = 1.0*T0
+  absorption             = always
+  total_energy_sum       = always
+  distribution_functions = always
+end:output
+
+begin:output
+  name                   = o2
+  file_prefix            = Ex
+  dt_snapshot            = 5.0*T0
+  ex                     = always + single
+  ey                     = always + single
+end:output
+
+begin:output
+  name                   = o3
+  file_prefix            = Num_Deu
+  dt_snapshot            = 5.0*T0
+  number_density         = Deu + single
+end:output
+
+begin:output
+  name                   = o4
+  file_prefix            = Num_Ele
+  dt_snapshot            = 10.0*T0
+  number_density         = Ele + single
+end:output
+
+
+begin:output
+  name                   = o5
+  file_prefix            = select
+  dt_snapshot            = 5.0*T0
+  dt_average             = 1.0*T0
+  particle_grid          = select
+  px                     = select
+  py                     = select
+  ek                     = select
+  particle_weight        = select
+end:output
+
+
+begin:output
+  name                   = o6
+  dt_snapshot            = 50.0 * T0
+  restartable            = T
+end:output
+
