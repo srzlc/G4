@@ -1,8 +1,0 @@
->>root
-root[0] TH1D h1("h1","",xbin,xmin,xmax);
-root[1] ifstream my;
-root[2] doubel x;
-root[3] my.open("");
-root[4] while(my>>x){h.Fill(x);}
-root[5] h.Draw();
-root[6] my.close;

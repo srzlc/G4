@@ -1,7 +1,0 @@
-/Users/sharong/Desktop/G4/polarisation/Pol01input/build/CMakeFiles/install/local.dir
-/Users/sharong/Desktop/G4/polarisation/Pol01input/build/CMakeFiles/install/strip.dir
-/Users/sharong/Desktop/G4/polarisation/Pol01input/build/CMakeFiles/install.dir
-/Users/sharong/Desktop/G4/polarisation/Pol01input/build/CMakeFiles/list_install_components.dir
-/Users/sharong/Desktop/G4/polarisation/Pol01input/build/CMakeFiles/rebuild_cache.dir
-/Users/sharong/Desktop/G4/polarisation/Pol01input/build/CMakeFiles/edit_cache.dir
-/Users/sharong/Desktop/G4/polarisation/Pol01input/build/CMakeFiles/Pol01.dir

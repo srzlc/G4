@@ -1,8 +1,0 @@
-/Users/sharong/Desktop/G4/S2.4s/build/CMakeFiles/install/local.dir
-/Users/sharong/Desktop/G4/S2.4s/build/CMakeFiles/install/strip.dir
-/Users/sharong/Desktop/G4/S2.4s/build/CMakeFiles/install.dir
-/Users/sharong/Desktop/G4/S2.4s/build/CMakeFiles/list_install_components.dir
-/Users/sharong/Desktop/G4/S2.4s/build/CMakeFiles/rebuild_cache.dir
-/Users/sharong/Desktop/G4/S2.4s/build/CMakeFiles/edit_cache.dir
-/Users/sharong/Desktop/G4/S2.4s/build/CMakeFiles/R2.dir
-/Users/sharong/Desktop/G4/S2.4s/build/CMakeFiles/S2.dir
