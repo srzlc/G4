@@ -1,0 +1,84 @@
+#include "S3TrackerSD.hh"
+#include "G4HCofThisEvent.hh"
+#include "G4Step.hh"
+#include "G4ThreeVector.hh"
+#include "G4SDManager.hh"
+#include "G4ios.hh"
+#include "G4Track.hh"
+/////
+S3TrackerSD::S3TrackerSD(
+                       const G4String& name,
+                       const G4String& hitsCollectionName)
+: G4VSensitiveDetector(name),fHitsCollection(nullptr)
+{
+  collectionName.insert(hitsCollectionName);
+}
+/////////
+S3TrackerSD::~S3TrackerSD()
+{}
+//////////
+void S3TrackerSD::Initialize(G4HCofThisEvent* hce)
+{
+//create hit collection
+  auto hcID
+    = G4SDManager::GetSDMpointer()->GetCollectionID(collectionName[0]);
+  if(hcID<0)
+    hcID=GetCollectionID(0);
+  fHitsCollection
+    = new S3TrackerHitsCollection(SensitiveDetectorName,collectionName[0]);
+//Add this collection in hce
+  hce->AddHitsCollection(hcID,fHitsCollection);
+
+}
+G4bool S3TrackerSD::ProcessHits(G4Step* step,G4TouchableHistory*)
+{
+//energy deposit
+  G4StepPoint* preStepPoint  = step->GetPreStepPoint();
+  G4StepPoint* postStepPoint = step->GetPostStepPoint();
+  fPrePos                    = preStepPoint->GetPosition();
+  fPostPos                   = postStepPoint->GetPosition();
+  S3TrackerHit* newHit       = new S3TrackerHit();
+  if(preStepPoint->GetStepStatus()==fGeomBoundary)
+  {
+    newHit->SetPrePos(fPrePos);
+  }
+  if(postStepPoint->GetStepStatus()==fGeomBoundary)
+  {
+    newHit->SetPostPos(fPostPos);
+  }
+  fEnergy                            = step->GetTotalEnergyDeposit();
+  G4Track* fTrack                    = step->GetTrack();
+  const G4DynamicParticle* fParticle = fTrack->GetDynamicParticle();
+  fParticleName = fParticle->GetDefinition()->GetParticleName();
+  if (fEnergy==0.) return false;
+  newHit->SetTrackID(step->GetTrack()->GetTrackID());
+//newHit->SetEdep(fEnergy);
+newHit->SetParticle(step->GetTrack()->GetDynamicParticle()->GetDefinition()
+->GetParticleName());
+newHit->SetEnergyDeposit(fEnergy);
+fHitsCollection->insert(newHit);
+return true;
+}
+
+void S3TrackerSD::EndOfEvent(G4HCofThisEvent*)
+{
+  if ( verboseLevel>1 ) 
+  { 
+     auto nofHits = fHitsCollection->entries();
+     G4cout<<G4endl
+           <<"-------->Hits Collection:in this event they are "<<nofHits
+           <<" hits on sensitive detector: "<<G4endl;
+     if(fHitsCollection)
+     {
+       G4int numberHits = fHitsCollection->entries();
+       for (G4int j=0;j<numberHits;++j)
+       {
+       //add deposit energy of each steps
+         S3TrackerHit* hit = (*fHitsCollection)[j];
+         fEnergy+=hit->GetTotalEnergyDeposit();
+       //(*fHitsCollection)[j]->Print();
+       } 
+     }
+  }       
+}
+

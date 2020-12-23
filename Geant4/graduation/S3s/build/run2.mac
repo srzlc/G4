@@ -1,0 +1,23 @@
+# Macro file for example B4
+# 
+# To be run preferably in batch, without graphics:
+# % exampleB4[a,b,c,d] run2.mac
+/score/create/boxMesh mesh_1
+/score/mesh/boxSize 40. 40. 10. cm
+/score/mesh/nBin 1 1 1
+/score/mesh/translate/xyz 0. 0. 11. cm
+/score/quantity/flatSurfaceCurrent nOf 1
+/score/filter/particle ePlus e+
+/score/close
+/score/list
+#
+#/run/numberOfThreads 4
+/run/initialize
+#
+# Default kinemtics: 
+# electron 50 MeV in direction (0.,0.,1.)
+# 1000 events
+#
+#/run/printProgress 100
+/run/beamOn 10000
+/score/dumpQuantityToFile mesh_1 nOf nOf.txt

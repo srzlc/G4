@@ -1,0 +1,2234 @@
+
+**************************************************************
+ Geant4 version Name: geant4-10-06-patch-01 [MT]   (14-February-2020)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+ASCIITree (ATree)
+DAWNFILE (DAWNFILE)
+G4HepRep (HepRepXML)
+G4HepRepFile (HepRepFile)
+RayTracer (RayTracer)
+VRML1FILE (VRML1FILE)
+VRML2FILE (VRML2FILE)
+gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+/run/verbose 2
+#
+#/testem/det/setMat G4_Fe
+#/testem/det/setSizeZ 1.75 mm
+/testem/phys/addPhysics polarized
+PhysicsList::AddPhysicsList: <polarized>
+#/testem/phys/addPhysics standard
+/run/printProgress 5000
+#
+/run/initialize
+userDetector->Construct() start.
+
+ The Box is 5 cm  x 5 cm  x 1 mm  of G4_W
+World is registered to the default region.
+physicsList->Construct() start.
+physicsList->CheckParticleList() start.
+physicsList->setCut() start.
+/run/physicsModified
+ buildBhabha cross section 0
+ buildBhabha cross section 0
+G4PolarizedPEEffectCrossSection() init
+
+pol-phot:  for gamma SubType=12 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+Polarized-PhotoElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila
+
+pol-compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   Polarized-Compton : Emin=    0 eV  Emax=  100 TeV
+
+pol-conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             polConv : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+msc:  for e-  SubType= 10
+      RangeFactor= 0.04, stepLimType: 1, latDisp: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+pol-eIoni:  for e-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+PolarizedMollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+pol-eBrem:  for e-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             PolBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+msc:  for e+  SubType= 10
+      RangeFactor= 0.04, stepLimType: 1, latDisp: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+pol-eIoni:  for e+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+PolarizedMollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+pol-eBrem:  for e+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             PolBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+pol-annihil:  for e+, integral:1  SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+Polarized-Annihilation : Emin=    0 eV  Emax=  100 TeV
+Start closing geometry.
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   0 kByte
+    Total CPU time elapsed for geometry optimisation: 0 seconds
+G4WT8 > /run/verbose 2
+G4WT20 > /run/verbose 2
+G4WT20 > /testem/phys/addPhysics polarized
+G4WT7 > /run/verbose 2
+G4WT9 > /run/verbose 2
+G4WT9 > /testem/phys/addPhysics polarized
+G4WT9 > /run/printProgress 5000
+G4WT12 > /run/verbose 2
+G4WT0 > /run/verbose 2
+G4WT0 > /testem/phys/addPhysics polarized
+G4WT0 > /run/printProgress 5000
+G4WT6 > /run/verbose 2
+G4WT21 > /run/verbose 2
+G4WT4 > /run/verbose 2
+G4WT15 > /run/verbose 2
+G4WT15 > /testem/phys/addPhysics polarized
+G4WT17 > /run/verbose 2
+G4WT18 > /run/verbose 2
+G4WT10 > /run/verbose 2
+G4WT13 > /run/verbose 2
+G4WT13 > /testem/phys/addPhysics polarized
+G4WT13 > /run/printProgress 5000
+G4WT22 > /run/verbose 2
+G4WT23 > /run/verbose 2
+G4WT1 > /run/verbose 2
+G4WT1 > /testem/phys/addPhysics polarized
+G4WT1 > /run/printProgress 5000
+G4WT7 > /testem/phys/addPhysics polarized
+G4WT7 > /run/printProgress 5000
+G4WT7 > /run/initialize 
+G4WT7 > /run/physicsModified 
+G4WT12 > /testem/phys/addPhysics polarized
+G4WT12 > /run/printProgress 5000
+G4WT12 > /run/initialize 
+G4WT0 > /run/initialize 
+G4WT6 > /testem/phys/addPhysics polarized
+G4PolarizedPEEffectCrossSection() init
+G4WT21 > /testem/phys/addPhysics polarized
+G4WT21 > /run/printProgress 5000
+G4WT16 > /run/verbose 2
+G4WT15 > /run/printProgress 5000
+G4WT17 > /testem/phys/addPhysics polarized
+G4WT17 > /run/printProgress 5000
+G4WT10 > /testem/phys/addPhysics polarized
+G4WT10 > /run/printProgress 5000
+G4WT10 > /run/initialize 
+G4WT13 > /run/initialize 
+G4WT22 > /testem/phys/addPhysics polarized
+G4WT23 > /testem/phys/addPhysics polarized
+G4WT23 > /run/printProgress 5000
+G4WT23 > /run/initialize 
+G4WT1 > /run/initialize 
+G4WT5 > /run/verbose 2
+G4WT5 > /testem/phys/addPhysics polarized
+G4WT5 > /run/printProgress 5000
+G4WT5 > /run/initialize 
+G4WT5 > /run/physicsModified 
+G4WT12 > /run/physicsModified 
+G4WT0 > /run/physicsModified 
+G4WT6 > /run/printProgress 5000
+G4WT4 > /testem/phys/addPhysics polarized
+G4WT21 > /run/initialize 
+G4PolarizedPEEffectCrossSection() init
+G4PolarizedPEEffectCrossSection() init
+G4WT21 > /run/physicsModified 
+G4PolarizedPEEffectCrossSection() init
+G4WT15 > /run/initialize 
+G4WT15 > /run/physicsModified 
+G4WT17 > /run/initialize 
+G4WT8 > /testem/phys/addPhysics polarized
+G4PolarizedPEEffectCrossSection() init
+G4WT8 > /run/printProgress 5000
+G4WT10 > /run/physicsModified 
+G4WT13 > /run/physicsModified 
+G4WT22 > /run/printProgress 5000
+G4PolarizedPEEffectCrossSection() init
+G4WT14 > /run/verbose 2
+G4WT20 > /run/printProgress 5000
+G4PolarizedPEEffectCrossSection() init
+G4WT23 > /run/physicsModified 
+G4PolarizedPEEffectCrossSection() init
+G4WT1 > /run/physicsModified 
+G4WT2 > /run/verbose 2
+G4WT9 > /run/initialize 
+G4PolarizedPEEffectCrossSection() init
+G4WT9 > /run/physicsModified 
+G4PolarizedPEEffectCrossSection() init
+G4WT19 > /run/verbose 2
+G4WT6 > /run/initialize 
+G4WT4 > /run/printProgress 5000
+G4PolarizedPEEffectCrossSection() init
+G4WT16 > /testem/phys/addPhysics polarized
+G4WT16 > /run/printProgress 5000
+G4WT17 > /run/physicsModified 
+G4WT3 > /run/verbose 2
+G4WT8 > /run/initialize 
+G4WT22 > /run/initialize 
+G4WT14 > /testem/phys/addPhysics polarized
+G4PolarizedPEEffectCrossSection() init
+G4WT20 > /run/initialize 
+G4WT2 > /testem/phys/addPhysics polarized
+G4WT2 > /run/printProgress 5000
+G4WT19 > /testem/phys/addPhysics polarized
+G4WT6 > /run/physicsModified 
+G4WT4 > /run/initialize 
+G4WT4 > /run/physicsModified 
+G4WT16 > /run/initialize 
+G4PolarizedPEEffectCrossSection() init
+G4WT16 > /run/physicsModified 
+G4WT8 > /run/physicsModified 
+G4WT22 > /run/physicsModified 
+G4PolarizedPEEffectCrossSection() init
+G4WT14 > /run/printProgress 5000
+G4WT20 > /run/physicsModified 
+G4PolarizedPEEffectCrossSection() init
+G4WT11 > /run/verbose 2
+G4PolarizedPEEffectCrossSection() init
+G4WT2 > /run/initialize 
+G4PolarizedPEEffectCrossSection() init
+G4WT2 > /run/physicsModified 
+G4WT18 > /testem/phys/addPhysics polarized
+G4PolarizedPEEffectCrossSection() init
+G4WT18 > /run/printProgress 5000
+G4WT14 > /run/initialize 
+G4WT11 > /testem/phys/addPhysics polarized
+G4PolarizedPEEffectCrossSection() init
+G4WT11 > /run/printProgress 5000
+G4WT3 > /testem/phys/addPhysics polarized
+G4WT18 > /run/initialize 
+G4WT14 > /run/physicsModified 
+G4WT19 > /run/printProgress 5000
+G4WT11 > /run/initialize 
+G4WT3 > /run/printProgress 5000
+G4PolarizedPEEffectCrossSection() init
+G4WT18 > /run/physicsModified 
+G4WT19 > /run/initialize 
+G4WT11 > /run/physicsModified 
+G4WT3 > /run/initialize 
+G4WT19 > /run/physicsModified 
+G4WT3 > /run/physicsModified 
+G4PolarizedPEEffectCrossSection() init
+G4PolarizedPEEffectCrossSection() init
+G4PolarizedPEEffectCrossSection() init
+G4PolarizedPEEffectCrossSection() init
+#
+/polarization/manager/verbose 1
+#/polarization/volume/set theBox 0. 0. 0.08
+/polarization/volume/list
+ Polarization for 1 registered volume(s) : 
+theBox : (0,0,0)
+#
+#/process/inactivate pol-eIoni
+#/process/inactivate pol-eBrem
+#/process/inactivate pol-compt
+#
+/gun/polarization 0. 0. -1.
+#/gun/particle gamma
+#
+#/gun/energy 10 MeV
+#
+##/tracking/verbose 1
+##/run/beamOn 1
+#
+#/analysis/setFileName polar
+#/analysis/h1/set 1  110  0     11 MeV #gamma energy
+#/analysis/h1/set 2  100  -1.   1.  #gamma cos(theta)
+#/analysis/h1/set 3  100  -180. 180. deg #gamma phi
+#/analysis/h1/set 4  100  -1.5  1.5      #gamma xpolarization
+#/analysis/h1/set 5  100  -1.5  1.5      #gamma ypolarization
+#/analysis/h1/set 6  100  -1.5  1.5      #gamma zpolarization
+#/analysis/h1/set 7  110  0     11 MeV #electron energy
+#/analysis/h1/set 8  100  -1.   1.  #electron cos(theta)
+#/analysis/h1/set 9  100  -180. 180. deg #electron phi
+#/analysis/h1/set 10 100  -1.5  1.5      #electron xpolarization
+#/analysis/h1/set 11 100  -1.5  1.5      #electron ypolarization
+#/analysis/h1/set 12 100  -1.5  1.5      #electron zpolarization
+#/analysis/h1/set 13 110  0     11 MeV #positron energy
+#/analysis/h1/set 14 100  -1.   1. none #positron cos(theta)
+#/analysis/h1/set 15 100  -180. 180. deg #positron phi
+#/analysis/h1/set 16 100   -1.5  1.5     #positron xpolarization
+#/analysis/h1/set 17 100   -1.5  1.5     #positron ypolarization
+#/analysis/h1/set 18 100   -1.5  1.5     #positron zpolarization
+#
+/run/beamOn 1000000
+
+Region <DefaultRegionForTheWorld> --  -- appears in <World> world volume
+ This region is in the mass world.
+ Root logical volume(s) : World 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_Galactic G4_W 
+ Production cuts :   gamma 1 mm      e- 1 mm      e+ 1 mm  proton 1 mm 
+
+Region <DefaultRegionForParallelWorld> --  -- is not associated to any world.
+ Root logical volume(s) : 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : 
+ Production cuts :   gamma 1 mm      e- 1 mm      e+ 1 mm  proton 1 mm 
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_Galactic
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_W
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  106.569 keV    e-  2.30976 MeV    e+  2.13081 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+### Run 0 starts.
+### Run 0 start.
+G4WT16 > /polarization/manager/verbose 1
+G4WT0 > /polarization/manager/verbose 1
+G4WT13 > /polarization/manager/verbose 1
+G4WT1 > /polarization/manager/verbose 1
+G4WT22 > /polarization/manager/verbose 1
+G4WT22 > /polarization/volume/list 
+G4WT22 > /gun/polarization 0. 0. -1.
+G4WT12 > /polarization/manager/verbose 1
+G4WT12 > /polarization/volume/list 
+G4WT12 > /gun/polarization 0. 0. -1.
+G4WT4 > /polarization/manager/verbose 1
+G4WT7 > /polarization/manager/verbose 1
+G4WT15 > /polarization/manager/verbose 1
+G4WT15 > /polarization/volume/list 
+G4WT15 > /gun/polarization 0. 0. -1.
+G4WT0 > /polarization/volume/list 
+G4WT0 > /gun/polarization 0. 0. -1.
+G4WT13 > /polarization/volume/list 
+G4WT13 > /gun/polarization 0. 0. -1.
+G4WT11 > /polarization/manager/verbose 1
+G4WT11 > /polarization/volume/list 
+G4WT17 > /polarization/manager/verbose 1
+G4WT17 > /polarization/volume/list 
+G4WT2 > /polarization/manager/verbose 1
+G4WT2 > /polarization/volume/list 
+G4WT2 > /gun/polarization 0. 0. -1.
+G4WT10 > /polarization/manager/verbose 1
+G4WT10 > /polarization/volume/list 
+G4WT10 > /gun/polarization 0. 0. -1.
+G4WT19 > /polarization/manager/verbose 1
+G4WT19 > /polarization/volume/list 
+G4WT19 > /gun/polarization 0. 0. -1.
+G4WT4 > /polarization/volume/list 
+G4WT4 > /gun/polarization 0. 0. -1.
+G4WT23 > /polarization/manager/verbose 1
+G4WT23 > /polarization/volume/list 
+G4WT23 > /gun/polarization 0. 0. -1.
+G4WT14 > /polarization/manager/verbose 1
+G4WT14 > /polarization/volume/list 
+G4WT11 > /gun/polarization 0. 0. -1.
+G4WT1 > /polarization/volume/list 
+G4WT17 > /gun/polarization 0. 0. -1.
+G4WT21 > /polarization/manager/verbose 1
+G4WT9 > /polarization/manager/verbose 1
+G4WT9 > /polarization/volume/list 
+G4WT20 > /polarization/manager/verbose 1
+G4WT3 > /polarization/manager/verbose 1
+G4WT3 > /polarization/volume/list 
+G4WT3 > /gun/polarization 0. 0. -1.
+G4WT6 > /polarization/manager/verbose 1
+G4WT5 > /polarization/manager/verbose 1
+G4WT5 > /polarization/volume/list 
+G4WT14 > /gun/polarization 0. 0. -1.
+G4WT1 > /gun/polarization 0. 0. -1.
+G4WT21 > /polarization/volume/list 
+G4WT21 > /gun/polarization 0. 0. -1.
+G4WT9 > /gun/polarization 0. 0. -1.
+G4WT20 > /polarization/volume/list 
+G4WT20 > /gun/polarization 0. 0. -1.
+G4WT7 > /polarization/volume/list 
+G4WT7 > /gun/polarization 0. 0. -1.
+G4WT8 > /polarization/manager/verbose 1
+G4WT5 > /gun/polarization 0. 0. -1.
+G4WT18 > /polarization/manager/verbose 1
+G4WT18 > /polarization/volume/list 
+G4WT18 > /gun/polarization 0. 0. -1.
+G4WT8 > /polarization/volume/list 
+G4WT16 > /polarization/volume/list 
+G4WT6 > /polarization/volume/list 
+G4WT8 > /gun/polarization 0. 0. -1.
+G4WT16 > /gun/polarization 0. 0. -1.
+G4WT6 > /gun/polarization 0. 0. -1.
+G4WT12 > ### Run 0 starts on worker thread 12.
+G4WT22 > ### Run 0 starts on worker thread 22.
+G4WT15 > ### Run 0 starts on worker thread 15.
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT10 > ### Run 0 starts on worker thread 10.
+G4WT13 > ### Run 0 starts on worker thread 13.
+G4WT2 > ### Run 0 starts on worker thread 2.
+G4WT12 > ### Run 0 start.
+G4WT19 > ### Run 0 starts on worker thread 19.
+G4WT4 > ### Run 0 starts on worker thread 4.
+G4WT23 > ### Run 0 starts on worker thread 23.
+G4WT17 > ### Run 0 starts on worker thread 17.
+G4WT11 > ### Run 0 starts on worker thread 11.
+G4WT3 > ### Run 0 starts on worker thread 3.
+G4WT3 > ### Run 0 start.
+G4WT22 > ### Run 0 start.
+G4WT1 > ### Run 0 starts on worker thread 1.
+G4WT9 > ### Run 0 starts on worker thread 9.
+G4WT20 > ### Run 0 starts on worker thread 20.
+G4WT15 > ### Run 0 start.
+G4WT21 > ### Run 0 starts on worker thread 21.
+G4WT7 > ### Run 0 starts on worker thread 7.
+G4WT5 > ### Run 0 starts on worker thread 5.
+G4WT5 > ### Run 0 start.
+G4WT8 > ### Run 0 starts on worker thread 8.
+G4WT8 > ### Run 0 start.
+G4WT0 > ### Run 0 start.
+G4WT6 > ### Run 0 starts on worker thread 6.
+G4WT10 > ### Run 0 start.
+G4WT13 > ### Run 0 start.
+G4WT2 > ### Run 0 start.
+G4WT19 > ### Run 0 start.
+G4WT4 > ### Run 0 start.
+G4WT23 > ### Run 0 start.
+G4WT17 > ### Run 0 start.
+G4WT11 > ### Run 0 start.
+G4WT14 > ### Run 0 starts on worker thread 14.
+G4WT14 > ### Run 0 start.
+G4WT9 > ### Run 0 start.
+G4WT20 > ### Run 0 start.
+G4WT21 > ### Run 0 start.
+G4WT7 > ### Run 0 start.
+G4WT18 > ### Run 0 starts on worker thread 18.
+G4WT18 > ### Run 0 start.
+G4WT6 > ### Run 0 start.
+G4WT1 > ### Run 0 start.
+G4WT16 > ### Run 0 starts on worker thread 16.
+G4WT16 > ### Run 0 start.
+G4WT12 > --> Event 0 starts with initial seeds (11740183,29844921).
+G4WT12 > --> Event 5000 starts with initial seeds (22336661,7849252).
+G4WT2 > --> Event 10000 starts with initial seeds (8337354,42813009).
+G4WT14 > --> Event 15000 starts with initial seeds (53367567,21905195).
+G4WT22 > --> Event 20000 starts with initial seeds (48384559,41096687).
+G4WT9 > --> Event 25000 starts with initial seeds (61831367,62083548).
+G4WT11 > --> Event 30000 starts with initial seeds (39821141,85341632).
+G4WT5 > --> Event 35000 starts with initial seeds (99922811,63805925).
+G4WT4 > --> Event 40000 starts with initial seeds (40365791,44839167).
+G4WT21 > --> Event 45000 starts with initial seeds (12210828,71372699).
+G4WT0 > --> Event 50000 starts with initial seeds (35263425,91653400).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT5 > --> Event 55000 starts with initial seeds (22186547,9493243).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT3 > --> Event 60000 starts with initial seeds (5423343,92671138).
+G4WT22 > --> Event 65000 starts with initial seeds (88426977,33404046).
+G4WT2 > --> Event 70000 starts with initial seeds (96588468,83649414).
+G4WT15 > --> Event 75000 starts with initial seeds (30443918,52863824).
+G4WT14 > --> Event 80000 starts with initial seeds (78971898,25043684).
+G4WT9 > --> Event 85000 starts with initial seeds (21522140,36575311).
+G4WT11 > --> Event 90000 starts with initial seeds (34727823,66908204).
+G4WT4 > --> Event 95000 starts with initial seeds (91962659,81796157).
+G4WT15 > --> Event 100000 starts with initial seeds (39710682,34089738).
+G4WT20 > --> Event 105000 starts with initial seeds (47611606,46987569).
+G4WT6 > --> Event 110000 starts with initial seeds (91800129,90448492).
+G4WT11 > --> Event 115000 starts with initial seeds (98574525,63553708).
+G4WT8 > --> Event 120000 starts with initial seeds (26231539,41470092).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT19 > --> Event 125000 starts with initial seeds (5543321,90196043).
+G4WT22 > --> Event 130000 starts with initial seeds (91420650,77741312).
+G4WT8 > --> Event 135000 starts with initial seeds (54632502,21381145).
+G4WT21 > --> Event 140000 starts with initial seeds (89607983,56755793).
+G4WT19 > --> Event 145000 starts with initial seeds (71705090,79411852).
+G4WT13 > --> Event 150000 starts with initial seeds (59063386,34068846).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT15 > --> Event 155000 starts with initial seeds (36601418,29129141).
+G4WT5 > --> Event 160000 starts with initial seeds (92607778,50470376).
+G4WT1 > --> Event 165000 starts with initial seeds (79158729,49390077).
+G4WT17 > --> Event 170000 starts with initial seeds (1896166,91812062).
+G4WT0 > --> Event 175000 starts with initial seeds (79962837,76301127).
+G4WT2 > --> Event 180000 starts with initial seeds (270032,73419642).
+G4WT23 > --> Event 185000 starts with initial seeds (39596527,24980926).
+G4WT19 > --> Event 190000 starts with initial seeds (2752691,29568415).
+G4WT21 > --> Event 195000 starts with initial seeds (67562657,55209511).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT3 > --> Event 200000 starts with initial seeds (20322269,26608932).
+G4WT18 > --> Event 205000 starts with initial seeds (634747,38830578).
+G4WT11 > --> Event 210000 starts with initial seeds (13297951,86686044).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT9 > --> Event 215000 starts with initial seeds (49491381,29737132).
+G4WT4 > --> Event 220000 starts with initial seeds (73966407,63172662).
+G4WT2 > --> Event 225000 starts with initial seeds (5274075,63539510).
+G4WT23 > --> Event 230000 starts with initial seeds (72383153,17331910).
+G4WT21 > --> Event 235000 starts with initial seeds (18129193,63068306).
+G4WT13 > --> Event 240000 starts with initial seeds (4805326,32292854).
+G4WT14 > --> Event 245000 starts with initial seeds (53319370,2601993).
+G4WT6 > --> Event 250000 starts with initial seeds (95608061,1926130).
+G4WT2 > --> Event 255000 starts with initial seeds (23617625,11437445).
+G4WT7 > --> Event 260000 starts with initial seeds (29716306,43781101).
+G4WT20 > --> Event 265000 starts with initial seeds (88300800,41108030).
+G4WT22 > --> Event 270000 starts with initial seeds (92725193,44909960).
+G4WT21 > --> Event 275000 starts with initial seeds (5436271,80618327).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT18 > --> Event 280000 starts with initial seeds (70534074,17422121).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT19 > --> Event 285000 starts with initial seeds (38387149,65422600).
+G4WT17 > --> Event 290000 starts with initial seeds (42643809,2999854).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT10 > --> Event 295000 starts with initial seeds (9691071,15321981).
+G4WT19 > --> Event 300000 starts with initial seeds (5067521,15189814).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT17 > --> Event 305000 starts with initial seeds (23005664,88271170).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT19 > --> Event 310000 starts with initial seeds (93258804,92945712).
+G4WT10 > --> Event 315000 starts with initial seeds (12967836,55472141).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT7 > --> Event 320000 starts with initial seeds (4549449,22893851).
+G4WT22 > --> Event 325000 starts with initial seeds (47593593,3895336).
+G4WT9 > --> Event 330000 starts with initial seeds (68896192,66687357).
+G4WT20 > --> Event 335000 starts with initial seeds (66970282,89492338).
+G4WT7 > --> Event 340000 starts with initial seeds (4263752,67654001).
+G4WT8 > --> Event 345000 starts with initial seeds (76693916,47238332).
+G4WT5 > --> Event 350000 starts with initial seeds (49560874,83572727).
+G4WT17 > --> Event 355000 starts with initial seeds (43842196,81835359).
+G4WT10 > --> Event 360000 starts with initial seeds (61788398,74163728).
+G4WT23 > --> Event 365000 starts with initial seeds (23273348,12551057).
+G4WT12 > --> Event 370000 starts with initial seeds (33524155,16736352).
+G4WT6 > --> Event 375000 starts with initial seeds (47309243,13974350).
+G4WT21 > --> Event 380000 starts with initial seeds (7985937,54477816).
+G4WT16 > --> Event 385000 starts with initial seeds (28526091,49809753).
+G4WT11 > --> Event 390000 starts with initial seeds (27753692,84943151).
+G4WT1 > --> Event 395000 starts with initial seeds (2090471,87577152).
+G4WT16 > --> Event 400000 starts with initial seeds (97730571,60442090).
+G4WT11 > --> Event 405000 starts with initial seeds (41440790,8329999).
+G4WT13 > --> Event 410000 starts with initial seeds (57475358,40662413).
+G4WT10 > --> Event 415000 starts with initial seeds (51087945,86430597).
+G4WT19 > --> Event 420000 starts with initial seeds (84922862,12040531).
+G4WT14 > --> Event 425000 starts with initial seeds (89920973,5766177).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT16 > --> Event 430000 starts with initial seeds (67830020,24697172).
+G4WT5 > --> Event 435000 starts with initial seeds (84702062,17040419).
+G4WT2 > --> Event 440000 starts with initial seeds (41851186,6008231).
+G4WT17 > --> Event 445000 starts with initial seeds (6520664,52511268).
+G4WT5 > --> Event 450000 starts with initial seeds (63310968,82992184).
+G4WT7 > --> Event 455000 starts with initial seeds (27752053,16419017).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT14 > --> Event 460000 starts with initial seeds (23379349,21433877).
+G4WT10 > --> Event 465000 starts with initial seeds (85355550,47866219).
+G4WT1 > --> Event 470000 starts with initial seeds (24551379,67819440).
+G4WT19 > --> Event 475000 starts with initial seeds (67560553,4671537).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT13 > --> Event 480000 starts with initial seeds (12193870,4749071).
+G4WT1 > --> Event 485000 starts with initial seeds (50309360,27682006).
+G4WT21 > --> Event 490000 starts with initial seeds (17585116,51098710).
+G4WT14 > --> Event 495000 starts with initial seeds (58317852,18930858).
+G4WT13 > --> Event 500000 starts with initial seeds (96663951,49767196).
+G4WT17 > --> Event 505000 starts with initial seeds (40795373,23572802).
+G4WT5 > --> Event 510000 starts with initial seeds (73814517,40603917).
+G4WT22 > --> Event 515000 starts with initial seeds (78751468,50710147).
+G4WT7 > --> Event 520000 starts with initial seeds (57917582,181168).
+G4WT10 > --> Event 525000 starts with initial seeds (40516495,97488123).
+G4WT4 > --> Event 530000 starts with initial seeds (55543047,41890072).
+G4WT22 > --> Event 535000 starts with initial seeds (43081855,49683654).
+G4WT10 > --> Event 540000 starts with initial seeds (79073214,79829812).
+G4WT20 > --> Event 545000 starts with initial seeds (36585003,58860450).
+G4WT21 > --> Event 550000 starts with initial seeds (5494689,4692894).
+G4WT23 > --> Event 555000 starts with initial seeds (73516494,50117021).
+G4WT18 > --> Event 560000 starts with initial seeds (93625771,62927705).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT10 > --> Event 565000 starts with initial seeds (57010412,36801594).
+G4WT20 > --> Event 570000 starts with initial seeds (39791542,3526884).
+G4WT19 > --> Event 575000 starts with initial seeds (16936749,15396612).
+G4WT1 > --> Event 580000 starts with initial seeds (23810863,44448971).
+G4WT19 > --> Event 585000 starts with initial seeds (93446505,32032018).
+G4WT10 > --> Event 590000 starts with initial seeds (49896162,42476809).
+G4WT2 > --> Event 595000 starts with initial seeds (94124484,94667041).
+G4WT8 > --> Event 600000 starts with initial seeds (10349041,40971875).
+G4WT11 > --> Event 605000 starts with initial seeds (45320993,21971672).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT22 > --> Event 610000 starts with initial seeds (97950994,86282378).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT16 > --> Event 615000 starts with initial seeds (21811902,45485818).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT10 > --> Event 620000 starts with initial seeds (28699946,45368176).
+G4WT6 > --> Event 625000 starts with initial seeds (47769808,73790699).
+G4WT8 > --> Event 630000 starts with initial seeds (61427253,65879482).
+G4WT22 > --> Event 635000 starts with initial seeds (90838849,62379240).
+G4WT10 > --> Event 640000 starts with initial seeds (17170685,79611843).
+G4WT2 > --> Event 645000 starts with initial seeds (84391421,98572325).
+G4WT20 > --> Event 650000 starts with initial seeds (65318012,99723356).
+G4WT21 > --> Event 655000 starts with initial seeds (17226397,57571387).
+G4WT23 > --> Event 660000 starts with initial seeds (49698704,34484350).
+G4WT19 > --> Event 665000 starts with initial seeds (92952758,33923119).
+G4WT3 > --> Event 670000 starts with initial seeds (48672127,78153765).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT17 > --> Event 675000 starts with initial seeds (15824002,8511805).
+G4WT4 > WARNING  in PolarizedAnnihilationPS::PostStepDoIt
+eps dicing very inefficient =0.00327126, 0.00322181.  For secondary energy = 0.479639   1001
+G4WT23 > --> Event 680000 starts with initial seeds (89898437,31399738).
+G4WT3 > --> Event 685000 starts with initial seeds (86653101,86835044).
+G4WT10 > --> Event 690000 starts with initial seeds (9100997,84315049).
+G4WT17 > --> Event 695000 starts with initial seeds (47713583,12418860).
+G4WT11 > --> Event 700000 starts with initial seeds (77360945,58932542).
+G4WT15 > --> Event 705000 starts with initial seeds (51172792,36791998).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT23 > --> Event 710000 starts with initial seeds (97937470,21251547).
+G4WT14 > --> Event 715000 starts with initial seeds (76167607,82084947).
+G4WT2 > --> Event 720000 starts with initial seeds (49117684,26044356).
+G4WT9 > --> Event 730000 starts with initial seeds (51119983,45782285).
+G4WT5 > --> Event 725000 starts with initial seeds (88304412,25549513).
+G4WT20 > --> Event 740000 starts with initial seeds (8185803,33439600).
+G4WT7 > --> Event 735000 starts with initial seeds (25076758,88150036).
+G4WT6 > --> Event 745000 starts with initial seeds (42646729,47617125).
+G4WT17 > --> Event 750000 starts with initial seeds (6371003,28064918).
+G4WT15 > --> Event 755000 starts with initial seeds (12406295,54905456).
+G4WT18 > --> Event 760000 starts with initial seeds (39320963,46724539).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT9 > --> Event 765000 starts with initial seeds (4311060,97461628).
+G4WT22 > --> Event 770000 starts with initial seeds (76391679,8986794).
+G4WT16 > --> Event 775000 starts with initial seeds (60876584,17163413).
+G4WT13 > --> Event 780000 starts with initial seeds (55139750,7398939).
+G4WT11 > --> Event 785000 starts with initial seeds (77823096,62320387).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT23 > --> Event 790000 starts with initial seeds (63632225,21384572).
+G4WT13 > --> Event 795000 starts with initial seeds (30369353,88698303).
+G4WT15 > --> Event 800000 starts with initial seeds (45224940,840544).
+G4WT18 > --> Event 805000 starts with initial seeds (16467374,81890290).
+G4WT5 > --> Event 810000 starts with initial seeds (47161030,55670428).
+G4WT19 > --> Event 815000 starts with initial seeds (89513039,63996440).
+G4WT14 > --> Event 820000 starts with initial seeds (63131880,39715039).
+G4WT1 > --> Event 825000 starts with initial seeds (31057965,94917684).
+G4WT8 > --> Event 830000 starts with initial seeds (12364268,20753669).
+G4WT0 > --> Event 835000 starts with initial seeds (27011591,53994339).
+G4WT4 > --> Event 840000 starts with initial seeds (68634688,12715053).
+G4WT19 > --> Event 845000 starts with initial seeds (67996865,63496315).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT15 > --> Event 850000 starts with initial seeds (26326352,56318724).
+G4WT12 > --> Event 855000 starts with initial seeds (2129012,97762119).
+G4WT22 > --> Event 860000 starts with initial seeds (14653998,8079063).
+G4WT8 > --> Event 865000 starts with initial seeds (16736119,776129).
+G4WT9 > --> Event 870000 starts with initial seeds (8175623,77488821).
+G4WT4 > --> Event 875000 starts with initial seeds (9775185,83523327).
+G4WT6 > --> Event 880000 starts with initial seeds (93597120,87432903).
+G4WT19 > --> Event 885000 starts with initial seeds (42848658,78773295).
+G4WT0 > --> Event 890000 starts with initial seeds (89694648,1513683).
+G4WT18 > --> Event 895000 starts with initial seeds (52685755,2879977).
+G4WT15 > --> Event 900000 starts with initial seeds (27165693,99429464).
+G4WT15 > --> Event 905000 starts with initial seeds (87665951,54488229).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT0 > --> Event 910000 starts with initial seeds (89325386,36108952).
+G4WT11 > --> Event 915000 starts with initial seeds (19216763,1657491).
+G4WT17 > --> Event 920000 starts with initial seeds (86367964,50615543).
+G4WT15 > --> Event 925000 starts with initial seeds (25403219,15736031).
+G4WT14 > --> Event 930000 starts with initial seeds (66205269,34597486).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT17 > --> Event 935000 starts with initial seeds (590527,56969439).
+G4WT14 > --> Event 940000 starts with initial seeds (85618096,50170665).
+G4WT20 > --> Event 945000 starts with initial seeds (63514947,57460993).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT7 > --> Event 950000 starts with initial seeds (18531453,39910191).
+G4WT14 > --> Event 955000 starts with initial seeds (32996475,92542755).
+G4WT9 > --> Event 960000 starts with initial seeds (44862860,60090380).
+G4WT6 > --> Event 965000 starts with initial seeds (92313152,91208976).
+Warning: PhotoelectricEffect Problem in pol-transfer photon to lepton:Px2 + Py2 + Pz2 > 1
+Polarization transfer forced to be total and similar as incoming Photo
+G4WT10 > --> Event 970000 starts with initial seeds (42830359,98379331).
+G4WT0 > --> Event 975000 starts with initial seeds (94316673,8952558).
+G4WT1 > --> Event 980000 starts with initial seeds (70436728,46846324).
+G4WT19 > --> Event 985000 starts with initial seeds (29431784,2937495).
+G4WT1 > --> Event 990000 starts with initial seeds (99607408,21668165).
+G4WT8 > --> Event 995000 starts with initial seeds (53515154,91930443).
+G4WT2 > Thread-local run terminated.
+G4WT2 > Run Summary
+G4WT2 >   Number of events processed : 46104
+G4WT2 >   User=73.640000s Real=27.101991s Sys=230.670000s [Cpu=1122.8%]
+G4WT2 > 
+ The run consists of 46104 gamma of 28.72 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 93537217
+ float_seed_table[] = 0.575253 0.727269 0.954595 0.246243 0.201795 0.76095 0.78393 0.208153 0.232059 0.639322 0.96855 0.601099 0.555951 0.93272 0.881928 0.643618 0.754856 0.317919 0.152642 0.755851 0.693289 0.152423 0.0875714 0.0600657 
+ i_lag = 16, j_lag = 2
+ carry = 5.96046e-08, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT11 > Thread-local run terminated.
+G4WT11 > Run Summary
+G4WT11 >   Number of events processed : 53244
+G4WT11 >   User=73.620000s Real=27.096485s Sys=230.620000s [Cpu=1122.8%]
+G4WT11 > 
+ The run consists of 53244 gamma of 22.611 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 34782290
+ float_seed_table[] = 0.073186 0.450042 0.986442 0.614024 0.615169 0.5551 0.777943 0.631313 0.526736 0.902231 0.920859 0.387197 0.495282 0.276347 0.824652 0.684858 0.054931 0.517594 0.0609393 0.538961 0.893396 0.346642 0.651431 0.44912 
+ i_lag = 16, j_lag = 2
+ carry = 0, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT5 > Thread-local run terminated.
+G4WT5 > Run Summary
+G4WT5 >   Number of events processed : 35496
+G4WT5 >   User=73.680000s Real=27.114648s Sys=230.760000s [Cpu=1122.8%]
+G4WT5 > 
+ The run consists of 35496 gamma of 18.951 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 15056395
+ float_seed_table[] = 0.897431 0.506967 0.766738 0.35444 0.745428 0.740392 0.16818 0.66755 0.529204 0.696108 0.160181 0.63345 0.86021 0.587757 0.649374 0.239476 0.570611 0.542711 0.0530843 0.607957 0.719668 0.88239 0.954182 0.710057 
+ i_lag = 18, j_lag = 4
+ carry = 0, count24 = 5
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT6 > Thread-local run terminated.
+G4WT6 > Run Summary
+G4WT6 >   Number of events processed : 32844
+G4WT6 >   User=73.650000s Real=27.107817s Sys=230.720000s [Cpu=1122.8%]
+G4WT6 > 
+ The run consists of 32844 gamma of 29.657 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 44787299
+ float_seed_table[] = 0.947612 0.244538 0.768036 0.807027 0.0956497 0.786668 0.634086 0.438212 0.765272 0.545168 0.294234 0.668122 0.210703 0.850578 0.461961 0.719545 0.435717 0.521578 0.94332 0.42335 0.680766 0.46259 0.229925 0.0201413 
+ i_lag = 1, j_lag = 11
+ carry = 5.96046e-08, count24 = 17
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT0 > Thread-local run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 35088
+G4WT0 >   User=73.720000s Real=27.130322s Sys=230.890000s [Cpu=1122.8%]
+G4WT0 > 
+ The run consists of 35088 gamma of 16.342 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 23367023
+ float_seed_table[] = 0.392783 0.873083 0.556282 0.244728 0.638824 0.0464531 0.946981 0.596299 0.464905 0.726221 0.164453 0.574248 0.016428 0.485973 0.840845 0.779443 0.804745 0.0931462 0.139721 0.832539 0.329392 0.307645 0.179723 0.399408 
+ i_lag = 16, j_lag = 2
+ carry = 0, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT16 > Thread-local run terminated.
+G4WT16 > Run Summary
+G4WT16 >   Number of events processed : 37128
+G4WT16 >   User=73.660000s Real=27.110740s Sys=230.760000s [Cpu=1122.9%]
+G4WT16 > 
+ The run consists of 37128 gamma of 18.436 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 89689272
+ float_seed_table[] = 0.345897 0.946133 0.553748 0.840946 0.793544 0.0440633 0.291884 0.497737 0.62687 0.740089 0.0285739 0.532291 0.119607 0.0422648 0.321526 0.69428 0.0543522 0.947365 0.930528 0.800715 0.746676 0.404661 0.1201 0.795624 
+ i_lag = 18, j_lag = 4
+ carry = 5.96046e-08, count24 = 5
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT15 > Thread-local run terminated.
+G4WT15 > Run Summary
+G4WT15 >   Number of events processed : 43656
+G4WT15 >   User=73.750000s Real=27.142542s Sys=231.000000s [Cpu=1122.8%]
+G4WT15 > 
+ The run consists of 43656 gamma of 19.527 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 27810400
+ float_seed_table[] = 0.657629 0.101198 0.330478 0.880773 0.375229 0.452689 0.0119995 0.290066 0.826669 0.552423 0.684061 0.141962 0.524379 0.585166 0.902074 0.595937 0.842024 0.935986 0.551704 0.751345 0.318409 0.782028 0.0981327 0.727543 
+ i_lag = 16, j_lag = 2
+ carry = 5.96046e-08, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT21 > Thread-local run terminated.
+G4WT21 > Run Summary
+G4WT21 >   Number of events processed : 48348
+G4WT21 >   User=73.700000s Real=27.126629s Sys=230.890000s [Cpu=1122.8%]
+G4WT21 > 
+ The run consists of 48348 gamma of 25.347 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 20771110
+ float_seed_table[] = 0.941837 0.0262542 0.775558 0.712501 0.898774 0.186069 0.384141 0.555063 0.155977 0.613405 0.321654 0.727977 0.277366 0.23922 0.642279 0.787204 0.731988 0.517676 0.476439 0.486763 0.535143 0.71243 0.189207 0.252124 
+ i_lag = 9, j_lag = 19
+ carry = 0, count24 = 12
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT12 > Thread-local run terminated.
+G4WT12 > Run Summary
+G4WT12 >   Number of events processed : 39372
+G4WT12 >   User=73.760000s Real=27.155019s Sys=231.030000s [Cpu=1122.4%]
+G4WT12 > 
+ The run consists of 39372 gamma of 22.765 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 35541242
+ float_seed_table[] = 0.118423 0.910893 0.470092 0.402093 0.45107 0.10496 0.864972 0.00265676 0.486478 0.0816013 0.337956 0.046027 0.73889 0.102038 0.0907393 0.971951 0.853529 0.107014 0.010144 0.796531 0.345283 0.0987864 0.911787 0.17966 
+ i_lag = 16, j_lag = 2
+ carry = G4WT14 > Thread-local run terminated.
+0, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT14 > Run Summary
+G4WT14 >   Number of events processed : 50592
+G4WT14 >   User=73.730000s Real=27.133538s Sys=230.940000s [Cpu=1122.9%]
+G4WT14 > 
+ The run consists of 50592 gamma of 17.385 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 10425996
+ float_seed_table[] = 0.621438 0.65078 0.293754 0.377668 0.194942 0.477442 0.502234 0.405665 0.269624 0.918748 0.929735 0.494763 0.477461 0.171174 0.463228 0.785165 0.765842 0.909694 0.642669 0.699084 0.107301 0.443337 0.513407 0.421402 
+ i_lag = 16, j_lag = 2
+ carry = 5.96046e-08, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT22 > Thread-local run terminated.
+G4WT22 > Run Summary
+G4WT22 >   Number of events processed : 47736
+G4WT22 >   User=73.780000s Real=27.155067s Sys=231.100000s [Cpu=1122.7%]
+G4WT22 > 
+ The run consists of 47736 gamma of 18.541 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 89531660
+ float_seed_table[] = G4WT10 > Thread-local run terminated.
+0.336503 0.34079 0.353851 0.100601 0.477051 0.852455 0.234637 0.871445 0.0783821 0.493717 G4WT10 > Run Summary
+0.620315 0.394501 0.727242 0.916941 0.657154 0.388229 0.602634 0.925042 0.662688 G4WT10 >   Number of events processed : 47328
+0.933476 0.12332 0.513305 0.453939 0.925396 
+ i_lag = 18, j_lag = 4
+ carry = G4WT10 >   User=73.790000s Real=27.157609s Sys=231.110000s [Cpu=1122.7%]
+5.96046e-08, count24 = 5
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT10 > 
+ The run consists of 47328 gamma of 24.649 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+G4WT13 > Thread-local run terminated.
+
+--------- Ranlux engine status ---------
+ Initial seed = 51471322G4WT13 > Run Summary
+
+ float_seed_table[] = G4WT13 >   Number of events processed : 33252
+0.0787349 0.646913 0.813909 0.0511875 0.49713 0.88902 0.532068 0.44443 0.902421 0.159057 0.167529 0.86581 0.405212 0.868649 0.763322 0.860574 0.134325 0.6516 0.0137212 0.58028 0.761247 0.221716 0.939239 0.516043 
+ i_lag = 11, j_lag = 21
+ carry = G4WT13 >   User=73.790000s Real=27.153621s Sys=231.090000s [Cpu=1122.8%]
+0, count24 = 4
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT13 > 
+ The run consists of 33252 gamma of 21.838 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 33707225
+ float_seed_table[] = 0.702135 0.743 0.665181 0.0378072 0.8838 0.534103 0.0540809 0.963991 0.53594 0.157709 0.410207 0.503313 0.332283 0.930208 0.36789 0.91761 0.5264 0.703499 0.867027 0.606475 0.212171 0.898165 0.956244 0.579251 
+ i_lag = 4, j_lag = 14
+ carry = 0, count24 = 8
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT1 > Thread-local run terminated.
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 35088
+G4WT1 >   User=73.730000s Real=27.135864s Sys=230.950000s [Cpu=1122.8%]
+G4WT1 > 
+ The run consists of 35088 gamma of 24.752 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 85446244
+ float_seed_table[] = G4WT8 > Thread-local run terminated.
+0.092993 0.613589 0.145995 0.997786 0.430664 0.703361 0.398099 0.569029 0.24112 G4WT8 > Run Summary
+0.267915 0.494938 0.533655 0.738081 0.712753 0.264283 0.00690573 G4WT8 >   Number of events processed : 40392
+0.495538 0.473923 0.363533 0.33163 0.845393 0.491203 0.0289725 0.316225 
+ i_lag = 16, j_lag = 2
+ carry = G4WT8 >   User=73.800000s Real=27.158433s Sys=231.130000s [Cpu=1122.8%]
+0, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT8 > 
+ The run consists of 40392 gamma of 22.517 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 69030940
+ float_seed_table[] = 0.114565 0.919858 0.196234 0.202851 0.99174 0.670749 0.386756 0.693268 0.428475 0.0786636 0.756582 0.992959 0.423007 0.193643 0.603663 0.961401 0.652646 0.166045 0.0746307 0.391645 0.167024 0.159866 0.74668 0.723713 
+ i_lag = 16, j_lag = 2
+ carry = 0, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT20 > Thread-local run terminated.
+G4WT20 > Run Summary
+G4WT20 >   Number of events processed : 30396
+G4WT20 >   User=73.770000s Real=27.146483s Sys=231.030000s [Cpu=1122.8%]
+G4WT20 > 
+ The run consists of 30396 gamma of 23.193 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 13118225
+ float_seed_table[] = 0.781907 0.306931 0.557349 0.951682 0.815417 0.205352 0.0134203 0.140213 0.58036 0.57638 0.304011 0.808646 0.365197 0.118606 0.0452873 0.259575 0.697362 0.494979 0.218954 0.187122 0.425806 0.141193 0.66341 0.698594 
+ i_lag = 16, j_lag = 2
+ carry = 0, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT17 > Thread-local run terminated.
+G4WT17 > Run Summary
+G4WT17 >   Number of events processed : 49980
+G4WT17 >   User=73.800000s Real=27.157262s Sys=231.120000s [Cpu=1122.8%]
+G4WT17 > 
+ The run consists of 49980 gamma of 25.106 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 36757820
+ float_seed_table[] = G4WT9 > Thread-local run terminated.
+0.190937 G4WT9 > Run Summary
+0.763299 0.63977 0.892107 0.865493 0.966485 0.0116488 0.159214 G4WT9 >   Number of events processed : 42636
+0.823355 0.735334 0.732537 0.748229 0.659688 0.929068 0.932341 0.850226 0.0975189 0.622559 0.134994 0.691669 0.505721 0.902338 0.130741 0.432652 
+ i_lag = 16, j_lag = 2
+ carry = G4WT9 >   User=73.780000s Real=27.151629s Sys=231.070000s [Cpu=1122.8%]
+0, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT9 > 
+ The run consists of 42636 gamma of 10.704 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 6774687
+ float_seed_table[] = 0.403803 0.627237 0.282268 0.704239 0.50649 0.844193 0.578879 0.464746 0.539572 0.56639 0.698993 0.657735 0.778399 0.0279258 0.56909 0.0366139 0.885 0.228729 0.27739 0.520398 0.249988 0.057469 0.668016 0.0904774 
+ i_lag = 14, j_lag = 0
+ carry = 0, count24 = 9
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT3 > Thread-local run terminated.
+G4WT3 > Run Summary
+G4WT3 >   Number of events processed : 49776
+G4WT3 >   User=73.820000s Real=27.167955s Sys=231.170000s [Cpu=1122.6%]
+G4WT3 > 
+ The run consists of 49776 gamma of 17.884 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 76426756
+ float_seed_table[] = 0.55539 0.282068 0.679504 0.705678 0.178277 0.681261 0.0611904 0.569623 0.0790801 0.465064 0.258157 0.100327 0.657947 0.206449 0.901799 0.799021 0.181467 0.38355 0.466508 0.769148 0.584408 0.46955 0.569471 0.780242 
+ i_lag = 16, j_lag = 2
+ carry = 0, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT23 > Thread-local run terminated.
+G4WT23 > Run Summary
+G4WT23 >   Number of events processed : 34272
+G4WT23 >   User=73.810000s Real=27.159291s Sys=231.120000s [Cpu=1122.7%]
+G4WT23 > 
+ The run consists of 34272 gamma of 29.593 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 62343156
+ float_seed_table[] = 0.715942 0.91283 0.978485 0.173523 0.397408 0.886264 0.141997 0.929174 0.0770774 0.348974 0.859179 0.379207 0.757219 0.377962 0.86766 0.621631 0.157952 0.71051 0.235637 0.652096 0.959777 0.477085 0.0623524 0.962672 
+ i_lag = 16, j_lag = 2
+ carry = 5.96046e-08, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT18 > Thread-local run terminated.
+G4WT18 > Run Summary
+G4WT18 >   Number of events processed : 32436
+G4WT18 >   User=73.780000s Real=27.151172s Sys=231.040000s [Cpu=1122.7%]
+G4WT18 > 
+ The run consists of 32436 gamma of 11.731 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 1808696
+ float_seed_table[] = 0.107807 0.0532296 0.928111 0.547285 0.144368 0.842476 0.901363 0.255183 0.0862126 0.743386 0.00263453 0.474913 0.304122 0.269344 0.659273 0.800629 0.355007 0.255924 0.601473 0.37135 0.0438349 0.980653 0.890667 0.0874432 
+ i_lag = 14, j_lag = 0
+ carry = 5.96046e-08, count24 = 9
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT7 > Thread-local run terminated.
+G4WT7 > Run Summary
+G4WT7 >   Number of events processed : 34272
+G4WT7 >   User=73.780000s Real=27.152872s Sys=231.050000s [Cpu=1122.6%]
+G4WT7 > 
+ The run consists of 34272 gamma of 14.692 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 49420201
+ float_seed_table[] = 0.945674 0.786278 0.112815 0.334878 0.909753 0.968211 0.0129109 0.816428 0.71861 0.598285 0.963781 0.796937 0.812897 0.25493 0.868334 0.71824 0.810213 0.872536 0.822579 0.11157 0.213267 0.70358 0.0901401 0.816395 
+ i_lag = 18, j_lag = 4
+ carry = 0, count24 = 5
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT4 > Thread-local run terminated.
+G4WT4 > Run Summary
+G4WT4 >   Number of events processed : 45288
+G4WT4 >   User=73.820000s Real=27.168352s Sys=231.150000s [Cpu=1122.5%]
+G4WT4 > 
+ The run consists of 45288 gamma of 20.87 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 93752479
+ float_seed_table[] = 0.588083 0.293694 0.856255 0.34708 0.157591 0.98218 0.93455 0.214544 0.780486 0.423031 0.341807 0.226078 0.27879 0.69821 0.250596 0.45904 0.160572 0.16049 0.897612 0.786268 0.705017 0.577105 0.248211 0.909313 
+ i_lag = 18, j_lag = 4
+ carry = 0, count24 = 5
+ luxury = 3 nskip = 199
+----------------------------------------
+G4WT19 > Thread-local run terminated.
+G4WT19 > Run Summary
+G4WT19 >   Number of events processed : 55276
+G4WT19 >   User=73.830000s Real=27.170110s Sys=231.160000s [Cpu=1122.5%]
+G4WT19 > 
+ The run consists of 55276 gamma of 22.172 MeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+--------- Ranlux engine status ---------
+ Initial seed = 72946470
+ float_seed_table[] = 0.347948 0.322235 0.90894 0.472193 0.505808 0.62058 0.0552475 0.691199 0.710921 0.821344 0.292508 0.593148 0.271499 0.945117 0.00883275 0.516136 0.763777 0.662488 0.776184 0.317392 0.269328 0.880658 0.712796 0.76698 
+ i_lag = 16, j_lag = 2
+ carry = 5.96046e-08, count24 = 7
+ luxury = 3 nskip = 199
+----------------------------------------
+ Run terminated.
+Run Summary
+  Number of events processed : 1000000
+  User=73.860000s Real=27.269515s Sys=231.240000s [Cpu=1118.8%]
+
+ The run consists of 1000000 gamma of 1 GeV through 1 mm  of G4_W (density: 19.3 g/cm3 )
+
+ Process calls frequency --->
+#
+Graphics systems deleted.
+Visualization Manager deleting...
+G4WT2 > 
+ Process calls frequency --->
+	Transportation = 160236
+	pol-conv = 4491
+	msc = 24518
+	pol-eBrem = 8719
+	pol-eIoni = 5639
+	pol-annihil = 1034
+	pol-compt = 1504
+	pol-phot = 2491
+ Gamma: 
+Mean Number per Event :1.0725
+Mean Energy :18.579 MeV +- 8.9125 MeV
+Mean Polarization :-0.85166 +- 0.34328
+ Electron: 
+Mean Number per Event :0.088561
+Mean Energy :10.293 MeV +- 6.2198 MeV
+Mean Polarization :-0.5782 +- 0.36092
+ Positron: 
+Mean Number per Event :0.076718
+Mean Energy :10.023 MeV +- 5.9061 MeV
+Mean Polarization :-0.55289 +- 0.36218
+Destroying WorkerRunManager (0x2b25a003ec20)
+G4WT2 > G4 kernel has come to Quit state.
+G4WT2 > UserRunAction deleted.
+G4WT2 > UserPrimaryGenerator deleted.
+G4WT11 > 
+ Process calls frequency --->
+	Transportation = 184948
+	pol-conv = 5144
+	pol-eBrem = 10040
+	msc = 28086
+	pol-eIoni = 6629
+	pol-phot = 2899
+	pol-compt = 1823
+	pol-annihil = 1229
+ Gamma: 
+Mean Number per Event :1.0739
+Mean Energy :18.602 MeV +- 8.9295 MeV
+Mean Polarization :-0.85113 +- 0.34446
+ Electron: 
+Mean Number per Event :0.087559
+Mean Energy :10.378 MeV +- 6.1711 MeV
+Mean Polarization :-0.58462 +- 0.3549
+ Positron: 
+Mean Number per Event :0.075332
+Mean Energy :10.167 MeV +- 5.8768 MeV
+Mean Polarization :-0.55492 +- 0.35957
+Destroying WorkerRunManager (0x2b25d403ec20)
+G4WT2 > RunManager is deleting RunManagerKernel.
+G4WT11 > G4 kernel has come to Quit state.
+G4WT11 > UserRunAction deleted.
+G4WT2 > EventManager deleted.
+G4WT11 > UserPrimaryGenerator deleted.
+G4WT2 > Units table cleared.
+G4WT11 > RunManager is deleting RunManagerKernel.
+G4WT5 > 
+ Process calls frequency --->
+	Transportation = 123146
+	pol-conv = 3339
+	msc = 18479
+	pol-eBrem = 6776
+	pol-compt = 1195
+	pol-phot = 2016
+	pol-eIoni = 4422
+	pol-annihil = 812
+ Gamma: 
+Mean Number per Event :1.076
+Mean Energy :18.587 MeV +- 8.9255 MeV
+Mean Polarization :-0.85179 +- 0.34302
+ Electron: 
+Mean Number per Event :0.085362
+Mean Energy :10.388 MeV +- 6.1438 MeV
+Mean Polarization :-0.58295 +- 0.35711
+ Positron: 
+Mean Number per Event :0.073276
+Mean Energy :9.9862 MeV +- 5.8192 MeV
+Mean Polarization :-0.55452 +- 0.35649
+Destroying WorkerRunManager (0x2b25b003ec20)
+G4WT5 > G4 kernel has come to Quit state.
+G4WT11 > EventManager deleted.
+G4WT11 > Units table cleared.
+G4WT2 > TransportationManager deleted.
+G4WT5 > UserRunAction deleted.
+G4WT11 > TransportationManager deleted.
+G4WT2 > Total navigation history collections cleaned: 8
+G4WT5 > UserPrimaryGenerator deleted.
+G4WT11 > Total navigation history collections cleaned: 8
+G4WT6 > 
+ Process calls frequency --->
+	Transportation = 114554
+	pol-conv = 3209
+	msc = 17578
+	pol-eBrem = 6472
+	pol-eIoni = 4188
+	pol-compt = 1196
+	pol-phot = 1879
+	pol-annihil = 733
+ Gamma: 
+Mean Number per Event :1.0768
+Mean Energy :18.507 MeV +- 8.9893 MeV
+Mean Polarization :-0.84789 +- 0.34766
+ Electron: 
+Mean Number per Event :0.089453
+Mean Energy :10.307 MeV +- 6.2443 MeV
+Mean Polarization :-0.57711 +- 0.36221
+ Positron: 
+Mean Number per Event :0.07767
+Mean Energy :9.8968 MeV +- 5.8931 MeV
+Mean Polarization :-0.54406 +- 0.36153
+Destroying WorkerRunManager (0x2b25b803ec20)
+G4WT2 > ================== Deleting memory pools ===================
+G4WT5 > RunManager is deleting RunManagerKernel.
+G4WT11 > ================== Deleting memory pools ===================
+G4WT6 > G4 kernel has come to Quit state.
+G4WT2 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT11 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT5 > EventManager deleted.
+G4WT0 > 
+ Process calls frequency --->
+	Transportation = 121946
+	pol-conv = 3316
+	msc = 18112
+	pol-eBrem = 6570
+	pol-eIoni = 4240
+	pol-annihil = 784
+	pol-phot = 1848
+	pol-compt = 1227
+ Gamma: 
+Mean Number per Event :1.0755
+Mean Energy :18.551 MeV +- 8.9023 MeV
+Mean Polarization :-0.85152 +- 0.34378
+ Electron: 
+Mean Number per Event :0.088121
+Mean Energy :10.39 MeV +- 6.2325 MeV
+Mean Polarization :-0.58902 +- 0.35891
+ Positron: 
+Mean Number per Event :0.074128
+Mean Energy :9.9567 MeV +- 5.9375 MeV
+Mean Polarization :-0.54044 +- 0.36243
+Destroying WorkerRunManager (0x2b259403ec20)
+G4WT2 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT6 > UserRunAction deleted.
+G4WT11 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT5 > Units table cleared.
+G4WT0 > G4 kernel has come to Quit state.
+G4WT2 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT6 > UserPrimaryGenerator deleted.
+G4WT6 > RunManager is deleting RunManagerKernel.
+G4WT5 > TransportationManager deleted.
+G4WT5 > Total navigation history collections cleaned: 8
+G4WT2 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT0 > UserRunAction deleted.
+G4WT11 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT11 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT6 > EventManager deleted.
+G4WT5 > ================== Deleting memory pools ===================
+G4WT2 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT0 > UserPrimaryGenerator deleted.
+G4WT15 > 
+ Process calls frequency --->
+	Transportation = 152123
+	pol-conv = 4258
+	msc = 23183
+	pol-eBrem = 8393
+	pol-eIoni = 5500
+	pol-phot = 2416
+	pol-annihil = 1006
+	pol-compt = 1559
+ Gamma: 
+Mean Number per Event :1.076
+Mean Energy :18.514 MeV +- 8.9788 MeV
+Mean Polarization :-0.84792 +- 0.34765
+ Electron: 
+Mean Number per Event :0.089816
+Mean Energy :10.384 MeV +- 6.2989 MeV
+Mean Polarization :-0.57938 +- 0.36361
+ Positron: 
+Mean Number per Event :0.076507
+Mean Energy :10.061 MeV +- 6.0131 MeV
+Mean Polarization :-0.54879 +- 0.36609
+Destroying WorkerRunManager (0x2b25ec03ec20)
+G4WT15 > G4 kernel has come to Quit state.
+G4WT11 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT6 > Units table cleared.
+G4WT5 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT2 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT0 > RunManager is deleting RunManagerKernel.
+G4WT16 > 
+ Process calls frequency --->
+	Transportation = 128792
+	pol-conv = 3462
+	pol-eBrem = 7016
+	msc = 19479
+	pol-eIoni = 4633
+	pol-phot = 2050
+	pol-compt = 1324
+	pol-annihil = 838
+ Gamma: 
+Mean Number per Event :1.0759
+Mean Energy :18.619 MeV +- 8.9389 MeV
+Mean Polarization :-0.85175 +- 0.34403
+ Electron: 
+Mean Number per Event :0.085865
+Mean Energy :10.401 MeV +- 6.219 MeV
+Mean Polarization :-0.59661 +- 0.3489
+ Positron: 
+Mean Number per Event :0.072668
+Mean Energy :9.9041 MeV +- 5.7776 MeV
+Mean Polarization :-0.54837 +- 0.35799
+Destroying WorkerRunManager (0x2b25f403ec20)
+G4WT21 > 
+ Process calls frequency --->
+	Transportation = 168582
+	pol-compt = 1728
+	pol-eBrem = 9462
+	pol-conv = 4680
+	msc = 26612
+	pol-phot = 2713
+	pol-eIoni = 6279
+	pol-annihil = 1173
+ Gamma: 
+Mean Number per Event :1.0821
+Mean Energy :18.478 MeV +- 9.0308 MeV
+Mean Polarization :-0.84525 +- 0.34959
+ Electron: 
+Mean Number per Event :0.086519
+Mean Energy :10.391 MeV +- 6.2076 MeV
+Mean Polarization :-0.58917 +- 0.35927
+ Positron: 
+Mean Number per Event :0.074812
+Mean Energy :9.86 MeV +- 5.8318 MeV
+Mean Polarization :-0.54897 +- 0.35937
+Destroying WorkerRunManager (0x2b261003ec20)
+G4WT21 > G4 kernel has come to Quit state.
+G4WT11 > Pool ID '17G4DynamicParticle', size : 0.00385 MB
+G4WT6 > TransportationManager deleted.
+G4WT6 > Total navigation history collections cleaned: 7
+G4WT2 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT2 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT16 > G4 kernel has come to Quit state.
+G4WT15 > UserRunAction deleted.
+G4WT12 > 
+ Process calls frequency --->
+	Transportation = 137140
+	pol-conv = 3864
+	msc = 20628
+	pol-eBrem = 7704
+	pol-phot = 2207
+	pol-eIoni = 4975
+	pol-compt = 1349
+	pol-annihil = 883
+ Gamma: 
+Mean Number per Event :1.0763
+Mean Energy :18.524 MeV +- 8.9673 MeV
+Mean Polarization :-0.84892 +- 0.34587
+ Electron: 
+Mean Number per Event :0.087397
+Mean Energy :10.413 MeV +- 6.1447 MeV
+Mean Polarization :-0.58929 +- 0.35295
+ Positron: 
+Mean Number per Event :0.077873
+Mean Energy :9.9236 MeV +- 5.8489 MeV
+Mean Polarization :-0.54607 +- 0.36351
+Destroying WorkerRunManager (0x2b25dc03ec20)
+G4WT21 > UserRunAction deleted.
+G4WT11 > Pool ID '7G4Track', size : 0.00673 MB
+G4WT5 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT6 > ================== Deleting memory pools ===================
+G4WT6 > Pool ID '20G4NavigationLevelRep', size : 0.00769 MB
+G4WT2 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT16 > UserRunAction deleted.
+G4WT14 > 
+ Process calls frequency --->
+	Transportation = 175090
+	pol-conv = 4745
+	msc = 25935
+	pol-eIoni = 5952
+	pol-annihil = 1090
+	pol-phot = 2669
+	pol-eBrem = 9195
+	pol-compt = 1641
+ Gamma: 
+Mean Number per Event :1.0693
+Mean Energy :18.702 MeV +- 8.84 MeV
+Mean Polarization :-0.85645 +- 0.33954
+ Electron: 
+Mean Number per Event :0.086832
+Mean Energy :10.492 MeV +- 6.2823 MeV
+Mean Polarization :-0.58396 +- 0.36034
+ Positron: 
+Mean Number per Event :0.0743
+Mean Energy :9.9818 MeV +- 5.9364 MeV
+Mean Polarization :-0.53928 +- 0.36694
+Destroying WorkerRunManager (0x2b25e803ec20)
+G4WT14 > G4 kernel has come to Quit state.
+G4WT12 > G4 kernel has come to Quit state.
+G4WT21 > UserPrimaryGenerator deleted.
+G4WT21 > RunManager is deleting RunManagerKernel.
+G4WT5 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT5 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT6 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT2 > Number of memory pools allocated: 9; of which, static: 0
+G4WT10 > 
+ Process calls frequency --->
+	Transportation = 164830
+	pol-compt = 1630
+	pol-conv = 4572
+	pol-eIoni = 5895
+	pol-annihil = 1096
+	msc = 26188
+	pol-eBrem = 9099
+	pol-phot = 2568
+ Gamma: 
+Mean Number per Event :1.078
+Mean Energy :18.515 MeV +- 8.9737 MeV
+Mean Polarization :-0.84728 +- 0.34876
+ Electron: 
+Mean Number per Event :0.088045
+Mean Energy :10.335 MeV +- 6.3255 MeV
+Mean Polarization :-0.58658 +- 0.36238
+ Positron: 
+Mean Number per Event :0.075304
+Mean Energy :10.063 MeV +- 6.0005 MeV
+Mean Polarization :-0.55086 +- 0.36577
+Destroying WorkerRunManager (0x2b25d003ec20)
+G4WT16 > UserPrimaryGenerator deleted.
+G4WT16 > RunManager is deleting RunManagerKernel.
+G4WT14 > UserRunAction deleted.
+G4WT11 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT11 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT11 > Number of memory pools allocated: 9; of which, static: 0
+G4WT21 > EventManager deleted.
+G4WT21 > Units table cleared.
+G4WT5 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT21 > TransportationManager deleted.
+G4WT2 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT2 > ============================================================
+G4WT2 > G4Allocator objects are deleted.
+G4WT16 > EventManager deleted.
+G4WT14 > UserPrimaryGenerator deleted.
+G4WT14 > RunManager is deleting RunManagerKernel.
+G4WT13 > 
+ Process calls frequency --->
+	Transportation = 115936
+	pol-conv = 3234
+	msc = 18402
+	pol-eBrem = 6451
+	pol-eIoni = 4274
+	pol-annihil = 760
+	pol-compt = 1258
+	pol-phot = 1838
+ Gamma: 
+Mean Number per Event :1.077
+Mean Energy :18.505 MeV +- 8.9988 MeV
+Mean Polarization :-0.84722 +- 0.34826
+ Electron: 
+Mean Number per Event :0.089589
+Mean Energy :10.202 MeV +- 6.3126 MeV
+Mean Polarization :-0.57307 +- 0.36615
+ Positron: 
+Mean Number per Event :0.076657
+Mean Energy :10.094 MeV +- 5.8806 MeV
+Mean Polarization :-0.56204 +- 0.35844
+Destroying WorkerRunManager (0x2b25e003ec20)
+G4WT14 > EventManager deleted.
+G4WT14 > Units table cleared.
+G4WT22 > 
+ Process calls frequency --->
+	Transportation = 166910
+	pol-conv = 4696
+	pol-eBrem = 9547
+	msc = 26290
+	pol-phot = 2709
+	pol-compt = 1698
+	pol-eIoni = 6118
+	pol-annihil = 1107
+ Gamma: 
+Mean Number per Event :1.0823
+Mean Energy :18.416 MeV +- 9.035 MeV
+Mean Polarization :-0.84385 +- 0.35094
+ Electron: 
+Mean Number per Event :0.088864
+Mean Energy :10.336 MeV +- 6.2437 MeV
+Mean Polarization :-0.58317 +- 0.35802
+ Positron: 
+Mean Number per Event :0.077133
+Mean Energy :9.977 MeV +- 5.9358 MeV
+Mean Polarization :-0.54258 +- 0.36472
+Destroying WorkerRunManager (0x2b261803ec20)
+G4WT6 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT5 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT21 > Total navigation history collections cleaned: 8
+G4WT21 > ================== Deleting memory pools ===================
+G4WT21 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT2 > Thread-local UImanager is to be deleted.
+G4WT16 > Units table cleared.
+G4WT1 > 
+ Process calls frequency --->
+	Transportation = 122012
+	pol-compt = 1192
+	pol-eBrem = 6724
+	pol-eIoni = 4350
+	msc = 19338
+	pol-conv = 3416
+	pol-annihil = 767
+	pol-phot = 1896
+ Gamma: 
+Mean Number per Event :1.0737
+Mean Energy :18.543 MeV +- 8.9339 MeV
+Mean Polarization :-0.84999 +- 0.34592
+ Electron: 
+Mean Number per Event :0.087238
+Mean Energy :10.255 MeV +- 6.296 MeV
+Mean Polarization :-0.57831 +- 0.35706
+ Positron: 
+Mean Number per Event :0.077747
+Mean Energy :10.086 MeV +- 5.8907 MeV
+Mean Polarization :-0.5557 +- 0.36083
+Destroying WorkerRunManager (0x2b259803ec20)
+G4WT1 > G4 kernel has come to Quit state.
+G4WT20 > 
+ Process calls frequency --->
+	Transportation = 105562
+	pol-conv = 2894
+	msc = 15977
+	pol-eBrem = 5822
+	pol-compt = 1116
+	pol-eIoni = 3900
+	pol-phot = 1739
+	pol-annihil = 676
+ Gamma: 
+Mean Number per Event :1.0747
+Mean Energy :18.612 MeV +- 8.9225 MeV
+Mean Polarization :-0.85143 +- 0.34361
+ Electron: 
+Mean Number per Event :0.086459
+Mean Energy :10.546 MeV +- 6.1645 MeV
+Mean Polarization :-0.58913 +- 0.35795
+ Positron: 
+Mean Number per Event :0.075273
+Mean Energy :9.8727 MeV +- 5.9275 MeV
+Mean Polarization :-0.54349 +- 0.36048
+Destroying WorkerRunManager (0x2b260c03ec20)
+G4WT0 > EventManager deleted.
+G4WT0 > Units table cleared.
+G4WT14 > TransportationManager deleted.
+G4WT0 > TransportationManager deleted.
+G4WT0 > Total navigation history collections cleaned: 8
+G4WT6 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT5 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT5 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT5 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT21 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT2 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT16 > TransportationManager deleted.
+G4WT16 > Total navigation history collections cleaned: 7
+G4WT16 > ================== Deleting memory pools ===================
+G4WT16 > Pool ID '20G4NavigationLevelRep', size : 0.00769 MB
+G4WT16 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT16 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT14 > Total navigation history collections cleaned: 8
+G4WT14 > ================== Deleting memory pools ===================
+G4WT14 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT0 > ================== Deleting memory pools ===================
+G4WT6 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT6 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT6 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT6 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT5 > Number of memory pools allocated: 9; of which, static: 0
+G4WT3 > 
+ Process calls frequency --->
+	Transportation = 173361
+	pol-conv = 4831
+	msc = 26279
+	pol-eIoni = 6303
+	pol-annihil = 1158
+	pol-compt = 1712
+	pol-phot = 2750
+	pol-eBrem = 9550
+ Gamma: 
+Mean Number per Event :1.0771
+Mean Energy :18.564 MeV +- 8.981 MeV
+Mean Polarization :-0.84864 +- 0.3463
+ Electron: 
+Mean Number per Event :0.088517
+Mean Energy :10.39 MeV +- 6.2058 MeV
+Mean Polarization :-0.58995 +- 0.35478
+ Positron: 
+Mean Number per Event :0.075759
+Mean Energy :9.9037 MeV +- 5.8035 MeV
+Mean Polarization :-0.54446 +- 0.36261
+Destroying WorkerRunManager (0x2b25a403ec20)
+G4WT3 > G4 kernel has come to Quit state.
+G4WT13 > G4 kernel has come to Quit state.
+G4WT3 > UserRunAction deleted.
+G4WT1 > UserRunAction deleted.
+G4WT11 > Dynamic pools deleted: 9 / Total memory freed: 0.026 MB
+G4WT23 > 
+ Process calls frequency --->
+	Transportation = 119718
+	pol-compt = 1174
+	msc = 18284
+	pol-conv = 3317
+	pol-eBrem = 6717
+	pol-phot = 1864
+	pol-eIoni = 4198
+	pol-annihil = 785
+ Gamma: 
+Mean Number per Event :1.0811
+Mean Energy :18.431 MeV +- 8.9828 MeV
+Mean Polarization :-0.84595 +- 0.34828
+ Electron: 
+Mean Number per Event :0.08949
+Mean Energy :10.342 MeV +- 6.1872 MeV
+Mean Polarization :-0.58938 +- 0.34965
+ Positron: 
+Mean Number per Event :0.076039
+Mean Energy :9.8504 MeV +- 5.8432 MeV
+Mean Polarization :-0.53425 +- 0.35835
+Destroying WorkerRunManager (0x2b261c03ec20)
+G4WT16 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT16 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT8 > 
+ Process calls frequency --->
+	Transportation = 140578
+	pol-conv = 3951
+	msc = 21845
+	pol-eBrem = 7769
+	pol-compt = 1321
+	pol-eIoni = 5005
+	pol-phot = 2220
+	pol-annihil = 889
+ Gamma: 
+Mean Number per Event :1.0741
+Mean Energy :18.557 MeV +- 8.9448 MeV
+Mean Polarization :-0.84964 +- 0.34542
+ Electron: 
+Mean Number per Event :0.088087
+Mean Energy :10.396 MeV +- 6.287 MeV
+Mean Polarization :-0.58078 +- 0.36476
+ Positron: 
+Mean Number per Event :0.077961
+Mean Energy :10.093 MeV +- 6.0245 MeV
+Mean Polarization :-0.55638 +- 0.36151
+Destroying WorkerRunManager (0x2b25c403ec20)
+G4WT14 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT0 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT0 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT0 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT18 > 
+ Process calls frequency --->
+	Transportation = 113278
+	pol-compt = 1167
+	pol-eIoni = 4085
+	pol-conv = 3188
+	pol-eBrem = 6286
+	msc = 17704
+	pol-phot = 1802
+	pol-annihil = 797
+ Gamma: 
+Mean Number per Event :1.0792
+Mean Energy :18.448 MeV +- 9.0215 MeV
+Mean Polarization :-0.84509 +- 0.34966
+ Electron: 
+Mean Number per Event :0.091565
+Mean Energy :10.447 MeV +- 6.2289 MeV
+Mean Polarization :-0.59337 +- 0.35555
+ Positron: 
+Mean Number per Event :0.07541
+Mean Energy :9.8925 MeV +- 5.9185 MeV
+Mean Polarization :-0.53572 +- 0.36703
+Destroying WorkerRunManager (0x2b260003ec20)
+G4WT18 > G4 kernel has come to Quit state.
+G4WT5 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT21 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT21 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT21 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT3 > UserPrimaryGenerator deleted.
+G4WT3 > RunManager is deleting RunManagerKernel.
+G4WT1 > UserPrimaryGenerator deleted.
+G4WT1 > RunManager is deleting RunManagerKernel.
+G4WT9 > 
+ Process calls frequency --->
+	Transportation = 147835
+	pol-conv = 4087
+	pol-eBrem = 8001
+	msc = 22648
+	pol-phot = 2352
+	pol-eIoni = 5304
+	pol-compt = 1426
+	pol-annihil = 966
+ Gamma: 
+Mean Number per Event :1.073
+Mean Energy :18.605 MeV +- 8.8923 MeV
+Mean Polarization :-0.85297 +- 0.34182
+ Electron: 
+Mean Number per Event :0.085773
+Mean Energy :10.413 MeV +- 6.2862 MeV
+Mean Polarization :-0.58422 +- 0.35548
+ Positron: 
+Mean Number per Event :0.07489
+Mean Energy :10.096 MeV +- 5.9201 MeV
+Mean Polarization :-0.55212 +- 0.3613
+Destroying WorkerRunManager (0x2b25c803ec20)
+G4WT1 > EventManager deleted.
+G4WT1 > Units table cleared.
+G4WT16 > Pool ID '17G4DynamicParticle', size : 0.00288 MB
+G4WT8 > G4 kernel has come to Quit state.
+G4WT14 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT14 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT10 > G4 kernel has come to Quit state.
+G4WT0 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT0 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT0 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT5 > ============================================================
+G4WT18 > UserRunAction deleted.
+G4WT12 > UserRunAction deleted.
+G4WT20 > G4 kernel has come to Quit state.
+G4WT21 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT20 > UserRunAction deleted.
+G4WT7 > 
+ Process calls frequency --->
+	Transportation = 119268
+	pol-conv = 3266
+	msc = 17916
+	pol-eBrem = 6603
+	pol-eIoni = 4316
+	pol-annihil = 807
+	pol-compt = 1208
+	pol-phot = 1904
+ Gamma: 
+Mean Number per Event :1.0793
+Mean Energy :18.5 MeV +- 8.9669 MeV
+Mean Polarization :-0.84884 +- 0.34601
+ Electron: 
+Mean Number per Event :0.087156
+Mean Energy :10.332 MeV +- 6.2271 MeV
+Mean Polarization :-0.58438 +- 0.35828
+ Positron: 
+Mean Number per Event :0.073588
+Mean Energy :9.9124 MeV +- 5.6564 MeV
+Mean Polarization :-0.55254 +- 0.35694
+Destroying WorkerRunManager (0x2b25bc03ec20)
+G4WT3 > EventManager deleted.
+G4WT3 > Units table cleared.
+G4WT9 > G4 kernel has come to Quit state.
+G4WT23 > G4 kernel has come to Quit state.
+G4WT9 > UserRunAction deleted.
+G4WT1 > TransportationManager deleted.
+G4WT4 > 
+ Process calls frequency --->
+	Transportation = 158616
+	pol-conv = 4522
+	msc = 24917
+	pol-eBrem = 9073
+	pol-phot = 2651
+	pol-eIoni = 5915
+	pol-annihil = 1076
+	pol-compt = 1621
+ Gamma: 
+Mean Number per Event :1.0803
+Mean Energy :18.396 MeV +- 9.038 MeV
+Mean Polarization :-0.84387 +- 0.35067
+ Electron: 
+Mean Number per Event :0.092232
+Mean Energy :10.38 MeV +- 6.1441 MeV
+Mean Polarization :-0.5865 +- 0.35525
+ Positron: 
+Mean Number per Event :0.078674
+Mean Energy :9.89 MeV +- 5.8925 MeV
+Mean Polarization :-0.5332 +- 0.36522
+Destroying WorkerRunManager (0x2b25ac03ec20)
+G4WT4 > G4 kernel has come to Quit state.
+G4WT17 > 
+ Process calls frequency --->
+	Transportation = 173632
+	pol-conv = 4779
+	msc = 25949
+	pol-eIoni = 6143
+	pol-compt = 1762
+	pol-phot = 2696
+	pol-eBrem = 9345
+	pol-annihil = 1157
+ Gamma: 
+Mean Number per Event :1.0748
+Mean Energy :18.573 MeV +- 8.9345 MeV
+Mean Polarization :-0.85101 +- 0.34446
+ Electron: 
+Mean Number per Event :0.087695
+Mean Energy :10.345 MeV +- 6.1987 MeV
+Mean Polarization :-0.58768 +- 0.35942
+ Positron: 
+Mean Number per Event :0.07451
+Mean Energy :10.214 MeV +- 5.9672 MeV
+Mean Polarization :-0.55699 +- 0.36099
+Destroying WorkerRunManager (0x2b25f803ec20)
+G4WT8 > UserRunAction deleted.
+G4WT14 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT14 > Pool ID '17G4DynamicParticle', size : 0.00288 MB
+G4WT10 > UserRunAction deleted.
+G4WT6 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT0 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT5 > G4Allocator objects are deleted.
+G4WT5 > Thread-local UImanager is to be deleted.
+G4WT18 > UserPrimaryGenerator deleted.
+G4WT18 > RunManager is deleting RunManagerKernel.
+G4WT21 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT18 > EventManager deleted.
+G4WT18 > Units table cleared.
+G4WT7 > G4 kernel has come to Quit state.
+G4WT11 > ============================================================
+G4WT3 > TransportationManager deleted.
+G4WT3 > Total navigation history collections cleaned: 7
+G4WT3 > ================== Deleting memory pools ===================
+G4WT3 > Pool ID '20G4NavigationLevelRep', size : 0.00769 MB
+G4WT3 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT3 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT4 > UserRunAction deleted.
+G4WT17 > G4 kernel has come to Quit state.
+G4WT8 > UserPrimaryGenerator deleted.
+G4WT8 > RunManager is deleting RunManagerKernel.
+G4WT14 > Pool ID '7G4Track', size : 0.00481 MB
+G4WT10 > UserPrimaryGenerator deleted.
+G4WT10 > RunManager is deleting RunManagerKernel.
+G4WT0 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT0 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT5 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT12 > UserPrimaryGenerator deleted.
+G4WT12 > RunManager is deleting RunManagerKernel.
+G4WT13 > UserRunAction deleted.
+G4WT12 > EventManager deleted.
+G4WT13 > UserPrimaryGenerator deleted.
+G4WT13 > RunManager is deleting RunManagerKernel.
+G4WT11 > G4Allocator objects are deleted.
+G4WT11 > Thread-local UImanager is to be deleted.
+G4WT11 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT9 > UserPrimaryGenerator deleted.
+G4WT9 > RunManager is deleting RunManagerKernel.
+G4WT16 > Pool ID '7G4Track', size : 0.00481 MB
+G4WT3 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT3 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT3 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT3 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT14 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT14 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT14 > Number of memory pools allocated: 9; of which, static: 0
+G4WT14 > Dynamic pools deleted: 9 / Total memory freed: 0.023 MB
+G4WT14 > ============================================================
+G4WT0 > Number of memory pools allocated: 9; of which, static: 0
+G4WT21 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT21 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT21 > Number of memory pools allocated: 9; of which, static: 0
+G4WT21 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT21 > ============================================================
+G4WT21 > G4Allocator objects are deleted.
+G4WT21 > Thread-local UImanager is to be deleted.
+G4WT21 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT1 > Total navigation history collections cleaned: 9
+G4WT1 > ================== Deleting memory pools ===================
+G4WT1 > Pool ID '20G4NavigationLevelRep', size : 0.0115 MB
+G4WT1 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT15 > UserPrimaryGenerator deleted.
+G4WT15 > RunManager is deleting RunManagerKernel.
+G4WT3 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT3 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT15 > EventManager deleted.
+G4WT15 > Units table cleared.
+G4WT10 > EventManager deleted.
+G4WT14 > G4Allocator objects are deleted.
+G4WT0 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT0 > ============================================================
+G4WT0 > G4Allocator objects are deleted.
+G4WT0 > Thread-local UImanager is to be deleted.
+G4WT0 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT13 > EventManager deleted.
+G4WT13 > Units table cleared.
+G4WT23 > UserRunAction deleted.
+G4WT9 > EventManager deleted.
+G4WT16 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT16 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT16 > Number of memory pools allocated: 9; of which, static: 0
+G4WT16 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT16 > ============================================================
+G4WT6 > Number of memory pools allocated: 9; of which, static: 0
+G4WT3 > Number of memory pools allocated: 9; of which, static: 0
+G4WT3 > Dynamic pools deleted: 9 / Total memory freed: 0.019 MB
+G4WT15 > TransportationManager deleted.
+G4WT10 > Units table cleared.
+G4WT14 > Thread-local UImanager is to be deleted.
+G4WT14 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT12 > Units table cleared.
+G4WT18 > TransportationManager deleted.
+G4WT18 > Total navigation history collections cleaned: 7
+G4WT18 > ================== Deleting memory pools ===================
+G4WT18 > Pool ID '20G4NavigationLevelRep', size : 0.00769 MB
+G4WT18 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT18 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT18 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT18 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT18 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT18 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT18 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT6 > Dynamic pools deleted: 9 / Total memory freed: 0.019 MB
+G4WT6 > ============================================================
+G4WT3 > ============================================================
+G4WT3 > G4Allocator objects are deleted.
+G4WT3 > Thread-local UImanager is to be deleted.
+G4WT3 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT12 > TransportationManager deleted.
+G4WT12 > Total navigation history collections cleaned: 8
+G4WT12 > ================== Deleting memory pools ===================
+G4WT12 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT12 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT12 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT12 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT12 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT12 > Pool ID '17G4DynamicParticle', size : 0.00288 MB
+G4WT12 > Pool ID '7G4Track', size : 0.00481 MB
+G4WT16 > G4Allocator objects are deleted.
+G4WT16 > Thread-local UImanager is to be deleted.
+G4WT16 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT6 > G4Allocator objects are deleted.
+G4WT15 > Total navigation history collections cleaned: 8
+G4WT10 > TransportationManager deleted.
+G4WT10 > Total navigation history collections cleaned: 8
+G4WT10 > ================== Deleting memory pools ===================
+G4WT10 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT10 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT10 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT10 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT10 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT10 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT10 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT10 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT10 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT10 > Number of memory pools allocated: 9; of which, static: 0
+G4WT19 > 
+ Process calls frequency --->
+	Transportation = 192390
+	pol-compt = 2001
+	msc = 29442
+	pol-conv = 5338
+	pol-eBrem = 10461
+	pol-eIoni = 6907
+	pol-annihil = 1275
+	pol-phot = 3017
+ Gamma: 
+Mean Number per Event :1.0755
+Mean Energy :18.545 MeV +- 8.957 MeV
+Mean Polarization :-0.84925 +- 0.34641
+ Electron: 
+Mean Number per Event :0.089008
+Mean Energy :10.64 MeV +- 6.2863 MeV
+Mean Polarization :-0.5946 +- 0.35555
+ Positron: 
+Mean Number per Event :0.075729
+Mean Energy :9.99 MeV +- 5.9132 MeV
+Mean Polarization :-0.54312 +- 0.36322
+Destroying WorkerRunManager (0x2b260403ec20)
+G4WT19 > G4 kernel has come to Quit state.
+G4WT15 > ================== Deleting memory pools ===================
+G4WT15 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT19 > UserRunAction deleted.
+G4WT22 > G4 kernel has come to Quit state.
+G4WT13 > TransportationManager deleted.
+G4WT22 > UserRunAction deleted.
+G4WT9 > Units table cleared.
+G4WT4 > UserPrimaryGenerator deleted.
+G4WT4 > RunManager is deleting RunManagerKernel.
+G4WT17 > UserRunAction deleted.
+G4WT4 > EventManager deleted.
+G4WT4 > Units table cleared.
+G4WT18 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT18 > Number of memory pools allocated: 9; of which, static: 0
+G4WT18 > Dynamic pools deleted: 9 / Total memory freed: 0.019 MB
+G4WT18 > ============================================================
+G4WT15 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT15 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT19 > UserPrimaryGenerator deleted.
+G4WT19 > RunManager is deleting RunManagerKernel.
+G4WT23 > UserPrimaryGenerator deleted.
+G4WT19 > EventManager deleted.
+G4WT19 > Units table cleared.
+G4WT1 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT1 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT1 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT1 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT4 > TransportationManager deleted.
+G4WT4 > Total navigation history collections cleaned: 8
+G4WT4 > ================== Deleting memory pools ===================
+G4WT4 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT4 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT4 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT4 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT4 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT4 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT4 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT4 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT4 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT8 > EventManager deleted.
+G4WT17 > UserPrimaryGenerator deleted.
+G4WT17 > RunManager is deleting RunManagerKernel.
+G4WT1 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT10 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT10 > ============================================================
+G4WT10 > G4Allocator objects are deleted.
+G4WT10 > Thread-local UImanager is to be deleted.
+G4WT10 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT15 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT15 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT15 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT15 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT15 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT19 > TransportationManager deleted.
+G4WT4 > Number of memory pools allocated: 9; of which, static: 0
+G4WT8 > Units table cleared.
+G4WT12 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT12 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT12 > Number of memory pools allocated: 9; of which, static: 0
+G4WT12 > Dynamic pools deleted: 9 / Total memory freed: 0.023 MB
+G4WT12 > ============================================================
+G4WT12 > G4Allocator objects are deleted.
+G4WT12 > Thread-local UImanager is to be deleted.
+G4WT12 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT23 > RunManager is deleting RunManagerKernel.
+G4WT22 > UserPrimaryGenerator deleted.
+G4WT23 > EventManager deleted.
+G4WT23 > Units table cleared.
+G4WT19 > Total navigation history collections cleaned: 8
+G4WT4 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT8 > TransportationManager deleted.
+G4WT8 > Total navigation history collections cleaned: 8
+G4WT8 > ================== Deleting memory pools ===================
+G4WT8 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT8 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT8 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT8 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT8 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT8 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT8 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT8 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT8 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT8 > Number of memory pools allocated: 9; of which, static: 0
+G4WT4 > ============================================================
+G4WT4 > G4Allocator objects are deleted.
+G4WT4 > Thread-local UImanager is to be deleted.
+G4WT4 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT20 > UserPrimaryGenerator deleted.
+G4WT20 > RunManager is deleting RunManagerKernel.
+G4WT7 > UserRunAction deleted.
+G4WT20 > EventManager deleted.
+G4WT20 > Units table cleared.
+G4WT9 > TransportationManager deleted.
+G4WT9 > Total navigation history collections cleaned: 8
+G4WT9 > ================== Deleting memory pools ===================
+G4WT9 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT8 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT8 > ============================================================
+G4WT8 > G4Allocator objects are deleted.
+G4WT8 > Thread-local UImanager is to be deleted.
+G4WT8 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT13 > Total navigation history collections cleaned: 7
+G4WT13 > ================== Deleting memory pools ===================
+G4WT13 > Pool ID '20G4NavigationLevelRep', size : 0.00769 MB
+G4WT13 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT13 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT13 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT19 > ================== Deleting memory pools ===================
+G4WT19 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT19 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT19 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT19 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT19 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT19 > Pool ID '17G4DynamicParticle', size : 0.00288 MB
+G4WT19 > Pool ID '7G4Track', size : 0.00481 MB
+G4WT19 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT19 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT19 > Number of memory pools allocated: 9; of which, static: 0
+G4WT19 > Dynamic pools deleted: 9 / Total memory freed: 0.023 MB
+G4WT19 > ============================================================
+G4WT19 > G4Allocator objects are deleted.
+G4WT19 > Thread-local UImanager is to be deleted.
+G4WT19 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT18 > G4Allocator objects are deleted.
+G4WT18 > Thread-local UImanager is to be deleted.
+G4WT18 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT20 > TransportationManager deleted.
+G4WT20 > Total navigation history collections cleaned: 8
+G4WT20 > ================== Deleting memory pools ===================
+G4WT20 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT20 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT17 > EventManager deleted.
+G4WT17 > Units table cleared.
+G4WT6 > Thread-local UImanager is to be deleted.
+G4WT6 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT22 > RunManager is deleting RunManagerKernel.
+G4WT15 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT22 > EventManager deleted.
+G4WT22 > Units table cleared.
+G4WT9 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT20 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT20 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT17 > TransportationManager deleted.
+G4WT17 > Total navigation history collections cleaned: 8
+G4WT17 > ================== Deleting memory pools ===================
+G4WT17 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT17 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT17 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT17 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT17 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT20 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT20 > Pool ID '17G4DynamicParticle', size : 0.00288 MB
+G4WT20 > Pool ID '7G4Track', size : 0.00481 MB
+G4WT23 > TransportationManager deleted.
+G4WT23 > Total navigation history collections cleaned: 7
+G4WT23 > ================== Deleting memory pools ===================
+G4WT23 > Pool ID '20G4NavigationLevelRep', size : 0.00769 MB
+G4WT23 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT17 > Pool ID '17G4DynamicParticle', size : 0.00288 MB
+G4WT17 > Pool ID '7G4Track', size : 0.00481 MB
+G4WT17 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT20 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT20 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT20 > Number of memory pools allocated: 9; of which, static: 0
+G4WT20 > Dynamic pools deleted: 9 / Total memory freed: 0.023 MB
+G4WT20 > ============================================================
+G4WT23 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT23 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT23 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT17 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT13 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT13 > Pool ID '17G4DynamicParticle', size : 0.00288 MB
+G4WT13 > Pool ID '7G4Track', size : 0.00481 MB
+G4WT13 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT20 > G4Allocator objects are deleted.
+G4WT20 > Thread-local UImanager is to be deleted.
+G4WT15 > Number of memory pools allocated: 9; of which, static: 0
+G4WT23 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT17 > Number of memory pools allocated: 9; of which, static: 0
+G4WT17 > Dynamic pools deleted: 9 / Total memory freed: 0.023 MB
+G4WT17 > ============================================================
+G4WT17 > G4Allocator objects are deleted.
+G4WT13 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT13 > Number of memory pools allocated: 9; of which, static: 0
+G4WT20 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT15 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT23 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT23 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT23 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT23 > Number of memory pools allocated: 9; of which, static: 0
+G4WT17 > Thread-local UImanager is to be deleted.
+G4WT17 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT13 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT15 > ============================================================
+G4WT15 > G4Allocator objects are deleted.
+G4WT9 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT9 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT23 > Dynamic pools deleted: 9 / Total memory freed: 0.019 MB
+G4WT23 > ============================================================
+G4WT13 > ============================================================
+G4WT13 > G4Allocator objects are deleted.
+G4WT13 > Thread-local UImanager is to be deleted.
+G4WT13 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT9 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT7 > UserPrimaryGenerator deleted.
+G4WT23 > G4Allocator objects are deleted.
+G4WT23 > Thread-local UImanager is to be deleted.
+G4WT23 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT1 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT9 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT7 > RunManager is deleting RunManagerKernel.
+G4WT22 > TransportationManager deleted.
+G4WT7 > EventManager deleted.
+G4WT7 > Units table cleared.
+G4WT9 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT22 > Total navigation history collections cleaned: 8
+G4WT15 > Thread-local UImanager is to be deleted.
+G4WT1 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT7 > TransportationManager deleted.
+G4WT9 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT9 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT15 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT1 > Number of memory pools allocated: 9; of which, static: 0
+G4WT7 > Total navigation history collections cleaned: 7
+G4WT22 > ================== Deleting memory pools ===================
+G4WT9 > Number of memory pools allocated: 9; of which, static: 0
+G4WT1 > Dynamic pools deleted: 9 / Total memory freed: 0.023 MB
+G4WT7 > ================== Deleting memory pools ===================
+G4WT22 > Pool ID '20G4NavigationLevelRep', size : 0.00961 MB
+G4WT9 > Dynamic pools deleted: 9 / Total memory freed: 0.021 MB
+G4WT1 > ============================================================
+G4WT7 > Pool ID '20G4NavigationLevelRep', size : 0.00769 MB
+G4WT22 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT9 > ============================================================
+G4WT1 > G4Allocator objects are deleted.
+G4WT7 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT22 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT9 > G4Allocator objects are deleted.
+G4WT1 > Thread-local UImanager is to be deleted.
+G4WT7 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT22 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT9 > Thread-local UImanager is to be deleted.
+G4WT1 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT7 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT22 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT9 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT7 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT22 > Pool ID '17G4DynamicParticle', size : 0.00288 MB
+G4WT7 > Pool ID '17G4DynamicParticle', size : 0.00192 MB
+G4WT22 > Pool ID '7G4Track', size : 0.00481 MB
+G4WT7 > Pool ID '7G4Track', size : 0.00385 MB
+G4WT22 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT7 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT22 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT7 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT22 > Number of memory pools allocated: 9; of which, static: 0
+G4WT7 > Number of memory pools allocated: 9; of which, static: 0
+G4WT22 > Dynamic pools deleted: 9 / Total memory freed: 0.023 MB
+G4WT7 > Dynamic pools deleted: 9 / Total memory freed: 0.019 MB
+G4WT22 > ============================================================
+G4WT7 > ============================================================
+G4WT22 > G4Allocator objects are deleted.
+G4WT7 > G4Allocator objects are deleted.
+G4WT22 > Thread-local UImanager is to be deleted.
+G4WT7 > Thread-local UImanager is to be deleted.
+G4WT22 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT7 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4 kernel has come to Quit state.
+UserDetectorConstruction deleted.
+UserPhysicsList deleted.
+UserActionInitialization deleted.
+UserWorkerThreadInitialization deleted.
+UserRunAction deleted.
+RunManager is deleting RunManagerKernel.
+EventManager deleted.
+Units table cleared.
+TransportationManager deleted.
+Total navigation history collections cleaned: 3
+G4RNGHelper object is deleted.
+================== Deleting memory pools ===================
+Pool ID '20G4NavigationLevelRep', size : 0.00288 MB
+Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+Number of memory pools allocated: 3; of which, static: 0
+Dynamic pools deleted: 3 / Total memory freed: 0.0048 MB
+============================================================
+G4Allocator objects are deleted.
+UImanager deleted.
+StateManager deleted.
+RunManagerKernel is deleted. Good bye :)

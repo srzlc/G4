@@ -1,0 +1,825 @@
+##G4.PRIM-FORMAT-2.4
+/BoundingBox        -9.8488578        -9.8488578        -9.8488578         9.8488578         9.8488578         9.8488578
+!SetCamera
+!OpenDevice
+!BeginModeling
+#--------------------
+#/PVName          Shape.0
+/Ndiv  24
+/ColorRGB                 1                 1                 1
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Tubs                 0                 6                 5                 0        6.28318531
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.633392886       -1.94182414              -500
+/PLVertex      -0.633392886       -1.94182414       -414.060952
+/PLVertex      -0.634445916        -1.9425194       -284.647108
+/PLVertex      -0.634542337       -1.94249461       -283.335954
+/PLVertex      -0.634466253       -1.94231652       -276.802706
+/PLVertex      -0.634445353       -1.94233097       -275.328045
+/PLVertex      -0.635405559       -1.94099223       -212.055166
+/PLVertex      -0.635924546        -1.9404204       -199.174966
+/PLVertex      -0.641281921       -1.92571575       -20.7346748
+/PLVertex      -0.645457847       -1.92475695                -5
+/PLVertex       -0.64545789       -1.92475694        -4.9998373
+/PLVertex      -0.645457889       -1.92475695       -4.99983004
+/PLVertex      -0.645457814       -1.92475718       -4.99967759
+/PLVertex      -0.645457923       -1.92475739       -4.99935518
+/PLVertex      -0.645456677       -1.92475794       -4.99871036
+/PLVertex      -0.645454048       -1.92475942       -4.99742073
+/PLVertex      -0.645446871       -1.92476544       -4.99484148
+/PLVertex      -0.645423379         -1.924771       -4.98968302
+/PLVertex      -0.645350059       -1.92481527       -4.97936641
+/PLVertex      -0.645062934        -1.9247589       -4.96401735
+/PLVertex      -0.644114077        -1.9245414       -4.92804808
+/PLVertex      -0.641488933       -1.92573178       -4.85615623
+/PLVertex      -0.640266636       -1.92794337       -4.78942102
+/PLVertex      -0.634810264       -1.93554201       -4.57905723
+/PLVertex      -0.611112415       -1.96264228        -4.1597792
+/PLVertex      -0.605244664       -1.97004591       -4.06590714
+/PLVertex      -0.549666589        -2.0040621       -3.13459624
+/PLVertex      -0.543041027       -2.00425971       -3.02843471
+/PLVertex      -0.540111984       -2.00535941       -2.99073021
+/PLVertex      -0.521767633       -2.02203402        -2.7641106
+/PLVertex      -0.502036324       -2.02685257       -2.59250002
+/PLVertex      -0.435604015       -2.04833941       -2.18580994
+/PLVertex      -0.435116116       -2.04853564       -2.18287399
+/PLVertex      -0.347857592        -2.0907142       -1.78776892
+/PLVertex      -0.330276449       -2.10085519       -1.60252446
+/PLVertex      -0.671384898       -1.89780579      -0.354315644
+/PLVertex      -0.786601634       -1.87243603      -0.028421868
+/PLVertex      -0.860624154       -1.83117532       0.185954602
+/PLVertex       -1.09532343       -1.73075936       0.697957783
+/PLVertex       -1.31899559       -1.63078072        1.06703934
+/PLVertex       -1.34232459       -1.61578482        1.11088124
+/PLVertex       -1.64455357       -1.38345136        1.68762315
+/PLVertex       -1.67901472       -1.36254154        1.74512969
+/PLVertex       -2.03591699       -1.13741353        2.25297961
+/PLVertex       -2.35094053      -0.896529391        2.65503026
+/PLVertex       -2.44659486      -0.773519056        2.79709502
+/PLVertex       -2.36032444      -0.898818925        2.84786813
+/PLVertex       -2.43815461      -0.800504286        2.82346823
+/PLVertex       -2.40499435      -0.747991242        2.76110084
+/PLVertex        -2.4644883      -0.725292696        2.74171768
+/PLVertex       -2.42509272      -0.704312028        2.77072044
+/PLVertex       -2.40157159       -0.73027617        2.77327165
+/PLVertex       -2.41115642      -0.722784209        2.79647561
+/PLVertex       -2.40604737      -0.719340826         2.8112845
+/PLVertex       -2.40930666      -0.718903291         2.8211806
+/PLVertex       -2.41507851      -0.723774419        2.81928602
+/PLVertex        -2.4170893      -0.721542512         2.8152888
+/PLVertex       -2.41721288      -0.724558226        2.81395028
+/PLVertex       -2.41562084      -0.723841501        2.81359193
+/PLVertex       -2.41600262      -0.723965423        2.81378803
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -2.35094053      -0.896529391        2.65503026
+/PLVertex       -3.35896594       0.215552543        4.34728287
+/PLVertex       -3.47841519        0.53637554                 5
+/PLVertex       -4.39343065         2.9939715                10
+/PLVertex       -40.9940487         101.29781               210
+/PLVertex        -94.064945        243.838376               500
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -3.35896594       0.215552543        4.34728287
+/PLVertex       -3.41734157       0.279282624        4.38426297
+/PLVertex       -3.45281298       0.356124721        4.40144913
+/PLVertex       -3.47028577        0.40059229        4.35414529
+/PLVertex       -3.41573382       0.485357446        4.31448692
+/PLVertex       -3.39126285       0.494923913        4.24461239
+/PLVertex       -3.43322927       0.489008973        4.22330258
+/PLVertex       -3.43448728       0.475063029        4.19341647
+/PLVertex       -3.42698983       0.467055758        4.21519135
+/PLVertex       -3.43176238       0.482553706        4.22095297
+/PLVertex       -3.43336537       0.474660658        4.22961703
+/PLVertex       -3.42864773       0.468822318        4.22508168
+/PLVertex       -3.42792543       0.469118763        4.21871544
+/PLVertex       -3.42640405         0.4719768        4.21730347
+/PLVertex       -3.42744897       0.471089721        4.21823248
+/PLVertex       -3.42738536       0.471042384        4.21861666
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -2.03591699       -1.13741353        2.25297961
+/PLVertex       -3.46920389       0.038197224         4.5864749
+/EndPolyline
+/ColorRGB                 0                 0                 1
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -3.46920389       0.038197224         4.5864749
+/PLVertex       -3.46920365      0.0381976089        4.58647491
+/EndPolyline
+/ColorRGB                 0                 0                 1
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -3.46920389       0.038197224         4.5864749
+/PLVertex       -3.48966312      0.0517332869        4.61757285
+/PLVertex       -3.58611669      0.0246011002        4.79259373
+/PLVertex       -3.62028376     -0.0797110312        4.96312161
+/PLVertex       -3.60724472     -0.0983052008        4.99194224
+/PLVertex       -3.60373518      -0.101739817        4.99832895
+/PLVertex       -3.60299763      -0.102416347        4.99966659
+/PLVertex       -3.60285273      -0.102552108        4.99993442
+/PLVertex       -3.60283541      -0.102568557        4.99996657
+/PLVertex       -3.60281744      -0.102585658                 5
+/PLVertex      -0.915449876       -2.65997393                10
+/PLVertex        22.9439918       -25.3654114        54.3918464
+/PLVertex        54.3470099       -55.2015182        112.669939
+/PLVertex        58.4716316       -59.1112832        120.321732
+/PLVertex        59.6915851       -60.2596695         122.58181
+/PLVertex        72.8281655       -72.5912318        146.890325
+/PLVertex        90.0887652       -88.7435774        178.713682
+/PLVertex        93.4319117       -91.8765086         184.88467
+/PLVertex        93.9604294       -92.3716073         185.85936
+/PLVertex        97.3263241       -95.5283145        192.050901
+/PLVertex        107.086719       -104.700539               210
+/PLVertex        124.399842       -120.970356        241.838358
+/PLVertex        124.785729       -121.332833        242.548231
+/PLVertex        185.737629       -179.577807        355.998383
+/PLVertex        187.694937       -181.450468        359.642204
+/PLVertex        195.600568       -189.017988        374.371281
+/PLVertex        209.989814       -202.754464        401.075512
+/PLVertex        216.632902       -209.101444        413.400039
+/PLVertex        233.946744       -225.670577        445.548318
+/PLVertex        263.249283       -253.776742               500
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        216.632902       -209.101444        413.400039
+/PLVertex        216.647727       -209.087392        413.399432
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        209.989814       -202.754464        401.075512
+/PLVertex        209.990876       -202.748328        401.082354
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        187.694937       -181.450468        359.642204
+/PLVertex        187.702256        -181.45463         359.64711
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        185.737629       -179.577807        355.998383
+/PLVertex        185.729845       -179.575871        356.004805
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        93.9604294       -92.3716073         185.85936
+/PLVertex        93.9337221       -92.3267469        185.896315
+/PLVertex        93.8569546       -92.3267371        185.917126
+/PLVertex         93.839412       -92.3261353        185.928165
+/PLVertex        93.8229219       -92.3255697        185.938542
+/PLVertex        93.7508197       -92.2809816        185.990387
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        93.8229219       -92.3255697        185.938542
+/PLVertex        93.8295594       -92.3433397        185.937722
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        93.8569546       -92.3267371        185.917126
+/PLVertex        93.8506739       -92.3271378        185.910385
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        90.0887652       -88.7435774        178.713682
+/PLVertex         90.094673        -88.738495        178.725099
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        72.8281655       -72.5912318        146.890325
+/PLVertex         72.749766       -72.6365871        146.971725
+/PLVertex        72.7518389       -72.7336127        147.110388
+/PLVertex        72.7372549       -72.7131195        147.054836
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        72.7518389       -72.7336127        147.110388
+/PLVertex        72.7387481       -72.7457222        147.103989
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        54.3470099       -55.2015182        112.669939
+/PLVertex        54.3344029       -55.2328841        112.659612
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -3.58611669      0.0246011002        4.79259373
+/PLVertex       -3.65425423     -0.0832540126                 5
+/PLVertex       -5.29686476       -2.68334691                10
+/PLVertex       -71.0012859       -106.687063               210
+/PLVertex       -166.272697       -257.492451               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -3.48966312      0.0517332869        4.61757285
+/PLVertex       -3.75541931        0.18746338                 5
+/PLVertex        -7.2300183        1.96205095                10
+/PLVertex       -146.213978        72.9455536               210
+/PLVertex       -347.740719        175.871632               500
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -3.46920389       0.038197224         4.5864749
+/PLVertex       -3.55258247       0.226689618        4.87401849
+/PLVertex       -3.53369466       0.265910628        4.89727465
+/PLVertex       -3.50395359       0.343360962        4.95715934
+/PLVertex       -3.49604839       0.376234013        4.98329277
+/PLVertex       -3.49166261       0.389831487        4.99189061
+/PLVertex       -3.48882882       0.395951578        4.99634679
+/PLVertex       -3.48747997       0.398588491        4.99848372
+/PLVertex       -3.48690427        0.39968118         4.9993633
+/PLVertex       -3.48666097       0.400136572        4.99973586
+/PLVertex       -3.48656043       0.400324934        4.99989136
+/PLVertex       -3.48654594       0.400351789        4.99991342
+/PLVertex       -3.48653577       0.400370702        4.99992888
+/PLVertex       -3.48650889       0.400420754        4.99996955
+/PLVertex       -3.48648893       0.400458113                 5
+/PLVertex      -0.209213115        6.53423723                10
+/PLVertex        22.9966038        49.9664545        45.4041256
+/PLVertex        46.1118061        93.3147313        80.6954612
+/PLVertex        86.2779489        168.571373        142.067016
+/PLVertex        116.526142        224.546509        187.913669
+/PLVertex        117.662746        226.648817        189.637964
+/PLVertex        120.716351        232.288293        194.265277
+/PLVertex        131.122216         251.47327               210
+/PLVertex        132.217156        253.491978         211.65566
+/PLVertex        147.564276         281.81352        234.876035
+/PLVertex          158.7465        302.498032        251.782121
+/PLVertex        188.082494        356.785403        296.158098
+/PLVertex        195.490856        370.466189        307.343068
+/PLVertex        265.235097               500        413.447923
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        188.082494        356.785403        296.158098
+/PLVertex          188.0621        356.794876        296.156999
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        132.217156        253.491978         211.65566
+/PLVertex        132.223858        253.488873        211.657649
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        116.526142        224.546509        187.913669
+/PLVertex        116.528969        224.562813        187.900768
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        22.9966038        49.9664545        45.4041256
+/PLVertex        23.0138066        49.9518059        45.4011368
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -3.53369466       0.265910628        4.89727465
+/PLVertex        -3.5182641       0.325279909         4.9224869
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex        -3.5182641       0.325279909         4.9224869
+/PLVertex       -3.51825337        0.32528257        4.92249406
+/PLVertex       -3.51687724       0.325651003        4.92344248
+/PLVertex       -3.51692424       0.325021978        4.92309415
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -1.67901472       -1.36254154        1.74512969
+/PLVertex       -3.65562912      -0.465002092                 5
+/PLVertex       -6.69202414       0.913761671                10
+/PLVertex       -128.147825        56.0643122               210
+/PLVertex       -304.258736         136.03261               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -1.64455357       -1.38345136        1.68762315
+/PLVertex       -2.05992792       -1.12190873         2.4012103
+/PLVertex       -2.02923521        -1.1271027        2.40789011
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -2.02923521        -1.1271027        2.40789011
+/PLVertex       -2.02922111       -1.12711864        2.40789939
+/PLVertex       -2.02883427       -1.12753505        2.40813556
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -2.05992792       -1.12190873         2.4012103
+/PLVertex       -2.05984707       -1.12110267        2.40193049
+/PLVertex       -2.05823853       -1.12017588        2.40308193
+/PLVertex       -2.05817668       -1.11958299        2.40277324
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -1.34232459       -1.61578482        1.11088124
+/PLVertex       -3.20194861      -0.249209143                 5
+/PLVertex       -5.59275245        1.50771288                10
+/PLVertex       -101.224906        71.7845938               210
+/PLVertex       -239.891529        173.686071               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -1.31899559       -1.63078072        1.06703934
+/PLVertex       -1.39240987       -1.59484887        1.18809726
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -1.39240987       -1.59484887        1.18809726
+/PLVertex       -1.39240955       -1.59487297        1.18811329
+/PLVertex       -1.39239707       -1.59613086         1.1890643
+/PLVertex       -1.39234071       -1.59650031        1.18851834
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -1.09532343       -1.73075936       0.697957783
+/PLVertex       -1.52857653        -1.5141028        1.51620243
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       -1.52857653        -1.5141028        1.51620243
+/PLVertex       -1.52854181       -1.51409867        1.51623202
+/PLVertex       -1.52831752       -1.51415191        1.51640792
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.860624154       -1.83117532       0.185954602
+/PLVertex       -2.59374039       -1.18884449                 5
+/PLVertex       -4.39380261      -0.521702011                10
+/PLVertex       -76.3962911        26.1639971               210
+/PLVertex       -180.799899        64.8582607               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.786601634       -1.87243603      -0.028421868
+/PLVertex       -2.64105518       -1.25715667                 5
+/PLVertex       -4.48502689      -0.645355017                10
+/PLVertex       -78.2438956         23.826711               210
+/PLVertex       -185.194255        59.3112067               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.671384898       -1.89780579      -0.354315644
+/PLVertex       -2.54335093       -1.91098112                 5
+/PLVertex       -4.29144178       -1.92328458                10
+/PLVertex       -74.2150758       -2.41542322               210
+/PLVertex       -175.604345       -3.12902425               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.330276449       -2.10085519       -1.60252446
+/PLVertex       -1.83210359        -1.2739494                 5
+/PLVertex       -2.96941641      -0.647745147                10
+/PLVertex       -48.4619292        24.4004252               210
+/PLVertex       -114.426073        60.7202721               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.347857592        -2.0907142       -1.78776892
+/PLVertex     -0.0905836474       -2.27109599      -0.607573802
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex     -0.0905836474       -2.27109599      -0.607573802
+/PLVertex      -0.090585861       -2.27109739      -0.607566677
+/PLVertex     -0.0971035135       -2.27399989      -0.589087951
+/PLVertex     -0.0848887836       -2.27216021       -0.58733332
+/PLVertex     -0.0835723025       -2.26393981      -0.587771756
+/PLVertex     -0.0831441195       -2.26289931      -0.582569186
+/PLVertex     -0.0861016789       -2.26101984      -0.581262611
+/PLVertex     -0.0870687085       -2.26118747      -0.582528287
+/PLVertex     -0.0867968651       -2.26075564       -0.58265073
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.435116116       -2.04853564       -2.18287399
+/PLVertex       0.833713979       -2.43786825                 5
+/PLVertex        1.71694686       -2.70888276                10
+/PLVertex         37.046262        -13.549463               210
+/PLVertex         88.273769       -29.2683044               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.435604015       -2.04833941       -2.18580994
+/PLVertex      0.0137281332       -2.24052405       0.473665547
+/EndPolyline
+/ColorRGB                 0                 0                 1
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      0.0137281332       -2.24052405       0.473665547
+/PLVertex      0.0137276299       -2.24052301       0.473666151
+/EndPolyline
+/ColorRGB                 0                 0                 1
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      0.0137281332       -2.24052405       0.473665547
+/PLVertex      0.0596290941        -2.2520754       0.540115864
+/PLVertex       0.135915226       -2.21187741       0.607587644
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       0.135915226       -2.21187741       0.607587644
+/PLVertex      -0.963005974        -0.1414402       0.945180373
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.963005974        -0.1414402       0.945180373
+/PLVertex      -0.963032076      -0.141373209       0.945163719
+/PLVertex       -0.96839823      -0.130722808       0.945267911
+/PLVertex      -0.963294037       -0.13272908       0.951512176
+/PLVertex      -0.964127452      -0.137781126       0.953729783
+/PLVertex       -0.96426084      -0.136682894       0.952612691
+/PLVertex      -0.964174593      -0.136962707       0.952511186
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       0.135915226       -2.21187741       0.607587644
+/PLVertex        1.96998303       -5.66737742      0.0441551112
+/PLVertex        264.345774              -500       -80.5586753
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      0.0137281332       -2.24052405       0.473665547
+/PLVertex      0.0232660874       -2.26359628       0.489897387
+/PLVertex      0.0278117623       -2.30390863       0.513715862
+/PLVertex      0.0158146453       -2.33221792       0.531988325
+/PLVertex       0.011126394       -2.35143529       0.529609499
+/PLVertex     0.00680816984       -2.36441448       0.526300193
+/PLVertex      0.0117564852       -2.35580023       0.524303692
+/PLVertex     0.00819323071       -2.35362807       0.520120493
+/PLVertex     0.00616078348       -2.35511681       0.521726531
+/PLVertex     0.00562864683       -2.35383645       0.521480461
+/PLVertex      0.0053642298       -2.35408255       0.521102614
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.502036324       -2.02685257       -2.59250002
+/PLVertex       0.389893522         -2.003431                 5
+/PLVertex       0.977269119       -1.98800685                10
+/PLVertex         24.472293       -1.37104084               210
+/PLVertex        58.5400776      -0.476440126               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.521767633       -2.02203402        -2.7641106
+/PLVertex      -0.165759026       -2.23444402       -0.07317419
+/PLVertex      -0.135289332       -2.23139435     -0.0696060536
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.135289332       -2.23139435     -0.0696060536
+/PLVertex       -0.13524587       -2.23136786     -0.0695430915
+/PLVertex      -0.133758251       -2.23041431      -0.067314555
+/PLVertex      -0.134289894       -2.22885872     -0.0673480743
+/PLVertex      -0.134276056       -2.22880681      -0.067279142
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.165759026       -2.23444402       -0.07317419
+/PLVertex      -0.165294363       -2.23442494     -0.0737479052
+/PLVertex      -0.164731459        -2.2356914     -0.0752333218
+/PLVertex      -0.164075718       -2.23569407     -0.0749386253
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.540111984       -2.00535941       -2.99073021
+/PLVertex      -0.470587594       -2.03983165       -2.23884905
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.470587594       -2.03983165       -2.23884905
+/PLVertex      -0.470489925       -2.03979724        -2.2388006
+/PLVertex      -0.466915153       -2.03849423       -2.23731425
+/PLVertex       -0.46568192       -2.03944628       -2.23705867
+/PLVertex      -0.465733666        -2.0394737        -2.2365651
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.543041027       -2.00425971       -3.02843471
+/PLVertex      0.0269110581       -2.02062984                 5
+/PLVertex       0.381869469       -2.03082493                10
+/PLVertex        14.5802059        -2.4386285               210
+/PLVertex        35.1677937       -3.02994367               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.605244664       -1.97004591       -4.06590714
+/PLVertex      -0.255947009        -2.3093835        0.38567824
+/EndPolyline
+/ColorRGB                 0                 0                 1
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.255947009        -2.3093835        0.38567824
+/PLVertex      -0.255947043       -2.30938288       0.385678487
+/EndPolyline
+/ColorRGB                 0                 0                 1
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.255947009        -2.3093835        0.38567824
+/PLVertex        -0.2479261        -2.3564357       0.444096296
+/PLVertex      -0.226450875       -2.40220505       0.536431533
+/PLVertex      -0.182954838       -2.34801829       0.582937017
+/PLVertex      -0.155951239       -2.35510611       0.636245641
+/PLVertex      -0.109042878       -2.37030782       0.644025283
+/PLVertex      -0.103617226       -2.38006006       0.673548293
+/PLVertex      -0.125145561        -2.3866076       0.685409419
+/PLVertex      -0.136735361       -2.39381599       0.670716538
+/PLVertex      -0.143798974       -2.38796429       0.683069717
+/PLVertex       -0.14142895       -2.38198129       0.673232926
+/PLVertex      -0.144854243       -2.38490719       0.667264273
+/PLVertex      -0.144542585       -2.38448182       0.667164878
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.144542585       -2.38448182       0.667164878
+/PLVertex       0.130993327       -2.45823684        1.47687704
+/PLVertex      -0.151651906       -2.30690862        1.57518361
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.151651906       -2.30690862        1.57518361
+/PLVertex      -0.151662899       -2.30685658        1.57515334
+/PLVertex      -0.151958191       -2.30440829        1.57372656
+/PLVertex      -0.152698343       -2.30513869        1.57284749
+/PLVertex      -0.152722457       -2.30489506        1.57293946
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex       0.130993327       -2.45823684        1.47687704
+/PLVertex       0.133465629       -2.45940273        1.47810394
+/PLVertex       0.138276357       -2.46227747        1.47837986
+/PLVertex       0.139947432       -2.46487609        1.48028212
+/PLVertex       0.140092776       -2.46580674        1.48153915
+/PLVertex       0.139842903       -2.46611386        1.48144863
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.144542585       -2.38448182       0.667164878
+/PLVertex       -2.07301484       -1.86827133                -5
+/PLVertex       -170.515929        43.2202685              -500
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.255947009        -2.3093835        0.38567824
+/PLVertex      -0.253430002       -2.30287433       0.408847613
+/PLVertex      -0.254109682        -2.2856196       0.445109142
+/PLVertex      -0.254456784       -2.28379912       0.478242999
+/PLVertex      -0.260860494       -2.27446874       0.494302816
+/PLVertex      -0.246597553       -2.27760625       0.496112313
+/PLVertex      -0.237318974       -2.28117988       0.501984904
+/PLVertex      -0.244418707       -2.28444271       0.505822022
+/PLVertex       -0.25041714       -2.28551552       0.507742509
+/PLVertex      -0.250179611        -2.2822852       0.504685795
+/PLVertex      -0.249090306       -2.28322328       0.503862646
+/PLVertex      -0.248674409        -2.2832081       0.503953007
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.640266636       -1.92794337       -4.78942102
+/PLVertex      -0.243679985       -2.15530989                 5
+/PLVertex     -0.0411211972       -2.27143857                10
+/PLVertex        8.06123032         -6.916586               210
+/PLVertex          19.80964       -13.6520498               500
+/EndPolyline
+/ColorRGB                 0                 1                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.645062934        -1.9247589       -4.96401735
+/PLVertex      -0.630995444       -1.92092244       -4.28714567
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.630995444       -1.92092244       -4.28714567
+/PLVertex      -0.630993672       -1.92094284       -4.28706587
+/PLVertex      -0.630584862       -1.92233923       -4.28151721
+/PLVertex      -0.629499221        -1.9255419       -4.27957311
+/PLVertex      -0.630962033       -1.92551007       -4.28074291
+/PLVertex      -0.630926909       -1.92525147       -4.28061779
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.635405559       -1.94099223       -212.055166
+/PLVertex      -0.629489623       -1.94646532       -212.055128
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.634466253       -1.94231652       -276.802706
+/PLVertex      -0.642676803        -1.9386798       -276.797689
+/EndPolyline
+/ColorRGB                 1                 0                 0
+/ForceWireframe  0
+/Origin                 0                 0                 0
+/BaseVector                 1                 0                 0                 0                 1                 0
+/Polyline
+/PLVertex      -0.634445916        -1.9425194       -284.647108
+/PLVertex      -0.610256814       -1.95149948       -284.652303
+/EndPolyline
+#--------------------
+!EndModeling
+!DrawAll
+!CloseDevice
